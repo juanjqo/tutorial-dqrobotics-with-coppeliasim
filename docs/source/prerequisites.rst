@@ -1,5 +1,6 @@
+=============
 Prerequisites
-=====
+=============
 
 #. `DQ Robotics <https://dqrobotics.github.io/>`_
 
@@ -7,10 +8,12 @@ Prerequisites
 
     .. tab-item:: Matlab
          
-        Download the files
-        ######## 
+        ----------
+        Download the library using one of the following options:
+        ---------- 
+        
 
-        #. (option 1) Using `git <https://git-scm.com/>`_ commands
+        #. Using `git <https://git-scm.com/>`_ commands
 
         .. code-block:: console
 
@@ -20,8 +23,10 @@ Prerequisites
         .. image:: ../images/install_matlab_using_powershell.gif
            :align: center
 
-        #. (option 2) Download the zip files
-        
+        #. Download the zip files (or use Github Desktops)
+
+        Go to the `DQ Robotics/matlab <https://github.com/dqrobotics/matlab.git>`_
+
          .. image:: ../images/install_matlab_zip.png
            :align: center       
 
