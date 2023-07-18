@@ -8,35 +8,35 @@ Prerequisites
 
     .. tab-item:: Matlab
          
-        
-        Download the library
-        --------------------
 
-        #. Using `git <https://git-scm.com/>`_ commands:
+   Download the library
+   --------------------
 
-         .. code-block:: console
+   #. Using `git <https://git-scm.com/>`_ commands:
 
-               cd ~
-               git clone https://github.com/dqrobotics/matlab.git
+   .. code-block:: console
 
-         .. image:: ../images/install_matlab_using_powershell.gif
-            :align: center
+         cd ~
+         git clone https://github.com/dqrobotics/matlab.git
 
-        #. Set the path in Matlab
+   .. image:: ../images/install_matlab_using_powershell.gif
+      :align: center
 
-         .. image:: ../images/set_path.gif
-            :align: center    
+   #. Set the path in Matlab
 
-        |
-        
-        Alternatively, you can download the zip file: 
+   .. image:: ../images/set_path.gif
+      :align: center    
 
-        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``.
+   |
 
-         .. image:: ../images/install_matlab_zip.png
-           :align: center       
+   Alternatively, you can download the zip file: 
 
-        Unzip the ``matlab-master.zip`` file and add it to the Path in Matlab.   
+   Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``.
+
+   .. image:: ../images/install_matlab_zip.png
+      :align: center       
+
+   Unzip the ``matlab-master.zip`` file and add it to the Path in Matlab.   
 
 
 
