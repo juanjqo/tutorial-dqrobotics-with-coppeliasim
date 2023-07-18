@@ -22,19 +22,23 @@ Prerequisites
         .. image:: ../images/install_matlab_using_powershell.gif
            :align: center
 
+        #. Set the path in Matlab
+
+        .. image:: ../images/set_path.gif
+           :align: center    
+
         |
         
-        If you are unfamiliar with the terminal, you can Download the zip file: 
+        Alternatively, you can Download the zip file: 
 
-        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``
+        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``.
 
          .. image:: ../images/install_matlab_zip.png
            :align: center       
 
-        #. Set the path 
+        Unzip the ``matlab-master.zip`` file and add it to the Path in Matlab.   
 
-         .. image:: ../images/set_path.gif
-           :align: center 
+
 
 
 
