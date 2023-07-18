@@ -9,7 +9,7 @@ Prerequisites
     .. tab-item:: Matlab
          
         
-        Download the library using one of the following options:
+        Download the library:
        
 
         #. Using `git <https://git-scm.com/>`_ commands:
@@ -24,13 +24,17 @@ Prerequisites
 
         |
         
-
-        If you are unfamiliar with the terminal, you can Download the zip files: 
+        If you are unfamiliar with the terminal, you can Download the zip file: 
 
         Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``
 
          .. image:: ../images/install_matlab_zip.png
            :align: center       
+
+        #. Set the path 
+
+         .. image:: ../images/set_path.gif
+           :align: center 
 
 
 

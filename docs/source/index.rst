@@ -7,8 +7,11 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 
 .. note::
 
-   This tutorial is focused on DQ Robotics for Matlab (master branch )running on Ubuntu 20.04 x64 LTS and 
-   Windows 11 64bits. However, some hints for Python and C++ are also included.
+   This tutorial is focused on DQ Robotics for Matlab (master branch). However, some hints for Python and C++ are also included.
+
+.. warning::
+   This tutorial assumes you are using Ubuntu 20.04 x64 LTS or
+   Windows 11 64bits.
 
 Contents
 --------
