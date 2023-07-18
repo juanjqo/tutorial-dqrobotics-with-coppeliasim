@@ -22,7 +22,7 @@ Prerequisites
         .. image:: ../images/install_matlab_using_powershell.gif
            :align: center
 
-         |
+        |
         
 
         If you are unfamiliar with the terminal, you can Download the zip files: 
