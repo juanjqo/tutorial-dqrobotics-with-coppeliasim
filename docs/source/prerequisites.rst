@@ -8,12 +8,11 @@ Prerequisites
 
     .. tab-item:: Matlab
          
-        ----------
-        Download the library using one of the following options:
-        ---------- 
         
+        Download the library using one of the following options:
+       
 
-        #. Using `git <https://git-scm.com/>`_ commands
+        #. Using `git <https://git-scm.com/>`_ commands:
 
         .. code-block:: console
 
@@ -23,9 +22,13 @@ Prerequisites
         .. image:: ../images/install_matlab_using_powershell.gif
            :align: center
 
-        #. Download the zip files (or use Github Desktops)
 
-        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_
+        
+
+        #. If you are unfamiliar with the terminal, you can Download the zip files: 
+
+        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``Code``, and clik on
+           ``Download zip``
 
          .. image:: ../images/install_matlab_zip.png
            :align: center       
