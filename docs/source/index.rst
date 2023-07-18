@@ -14,7 +14,8 @@ Contents
 --------
 
 .. toctree::
-
+   
+   prerequisites
    usage
    api
 
