@@ -21,6 +21,7 @@ Prerequisites
            :align: center
 
         #. (option 2) Download the zip files
+        
          .. image:: ../images/install_matlab_zip.png
            :align: center       
 
