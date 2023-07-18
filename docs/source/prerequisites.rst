@@ -25,7 +25,7 @@ Prerequisites
 
         #. Download the zip files (or use Github Desktops)
 
-        Go to the `DQ Robotics/matlab <https://github.com/dqrobotics/matlab.git>`_
+        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_
 
          .. image:: ../images/install_matlab_zip.png
            :align: center       
