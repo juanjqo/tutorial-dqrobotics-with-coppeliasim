@@ -17,7 +17,9 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx_tabs.tabs'
+    'hoverxref.extension', # https://sphinx-hoverxref.readthedocs.io/en/latest/index.html
+    'sphinx_copybutton', # https://sphinx-copybutton.readthedocs.io/en/latest/
+    'sphinx_design' # https://sphinx-design.readthedocs.io/en/latest/get_started.html
 ]
 
 
