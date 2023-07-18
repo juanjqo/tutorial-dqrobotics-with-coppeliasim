@@ -9,7 +9,7 @@ Prerequisites
 
         #. Option 1: Using the terminal
 
-        .. image:: ../../images/install_matlab_using_powershell.gif
+        .. image:: ../images/install_matlab_using_powershell.gif
            :align: center
 
         .. code-block:: console
