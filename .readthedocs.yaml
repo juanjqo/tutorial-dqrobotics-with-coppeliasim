@@ -20,7 +20,7 @@ python:
 
 python:
    install:
-   - requirements: docs/source/requirements.txt
+   - requirements: docs/requirements.txt
 
 formats:
   - pdf
