@@ -22,13 +22,12 @@ Prerequisites
         .. image:: ../images/install_matlab_using_powershell.gif
            :align: center
 
-
+         |
         
 
-        #. If you are unfamiliar with the terminal, you can Download the zip files: 
+        If you are unfamiliar with the terminal, you can Download the zip files: 
 
-        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``Code``, and clik on
-           ``Download zip``
+        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``
 
          .. image:: ../images/install_matlab_zip.png
            :align: center       
