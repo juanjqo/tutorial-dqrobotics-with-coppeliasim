@@ -1,6 +1,10 @@
 ===================================
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 ===================================
+.. image:: ../images/cover.png
+   :align: center
+
+|   
 
 .. warning::
    This project is unofficial and under active development.
