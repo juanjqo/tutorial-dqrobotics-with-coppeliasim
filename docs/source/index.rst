@@ -9,7 +9,8 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 
 .. image:: ../images/cover.png
    :align: center
-
+.. image:: ../images/dqrobotics_drone.gif
+   :align: center
 |   
 
 .. warning::
