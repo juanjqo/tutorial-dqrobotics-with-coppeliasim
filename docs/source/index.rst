@@ -1,6 +1,6 @@
-===================================
+=============================================================================
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
-===================================
+=============================================================================
 |license| |visitors| |ubuntu| |windows| |mac|
 |matlab| |python| |cpp| |coppelia|
 
@@ -25,7 +25,10 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 .. |dqroboticscpp| image:: https://github.com/dqrobotics/cpp/actions/workflows/cpp_build_ubuntu.yml/badge.svg?branch=master
 .. |coppelia| image:: https://img.shields.io/badge/Tested_on_CoppeliaSim-4.5.1-orange
 
-
+.. |logo| image:: ../images/logo.svg
+.. |logopng| image:: ../images/logo.png
+.. |dqroboticslogo| image:: ../images/dqrobotics_logo_infinity.svg
+.. |dqroboticslogo2| image:: ../images/dqrobotics_logo_infinity2.svg
 
 
 .. image:: ../images/cover.png
