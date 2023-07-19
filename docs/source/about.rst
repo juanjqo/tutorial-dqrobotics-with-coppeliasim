@@ -9,7 +9,7 @@ About this tutorial
 .. tip::
    If you want to learn more about robot modeling and control using dual quaternion algebra, check out this amazing `book. <https://hal.science/hal-01478225v1>`_
 
-.. tip::   
+.. hint::   
    We recommend taking this awesome `course <https://github.com/dqrobotics/learning-dqrobotics-in-matlab/tree/master>`_ in DQ Robotics (Matlab)
    before taking this tutorial.
 
