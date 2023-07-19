@@ -2,11 +2,6 @@
 About this tutorial
 ===================
 
-This tutorial is designed to get you started with DQ Robotics and CoppeliaSim.
-
-
-
-
 .. note:: 
    This tutorial requires basic concepts about dual quaternion algebra,
    DQ Robotics, and CoppeliaSim. If those topics are unfamiliar to you, this tutorial **is not** for you.
@@ -22,20 +17,13 @@ This tutorial is designed to get you started with DQ Robotics and CoppeliaSim.
    Learn more about CoppeliaSim in its `official documentation. <https://www.coppeliarobotics.com/helpFiles/index.html>`_
 
    
+This tutorial is designed to get you started with DQ Robotics and CoppeliaSim.
 
-.. list-table:: Title
-:widths: 25 25 50
-:header-rows: 1
 
-* - Heading row 1, column 1
-    - Heading row 1, column 2
-    - Heading row 1, column 3
-* - Row 1, column 1
-    -
-    - Row 1, column 3
-* - Row 2, column 1
-    - Row 2, column 2
-    - Row 2, column 3
+
+
+
+
 
 
 
