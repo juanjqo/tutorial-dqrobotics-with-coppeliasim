@@ -2,7 +2,7 @@
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 ===================================
 |license| |visitors| |ubuntu| |windows| |mac|
-|matlab| |dqroboticsmatlab| |matlabactivity| |matlabtest| |python| |cpp| |dqroboticscpp|
+|matlab| |python| |cpp| 
 
 .. |license| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
 
@@ -21,8 +21,8 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 .. |matlabtest| image:: https://github.com/dqrobotics/matlab/actions/workflows/matlab_test.yml/badge.svg?branch=master
 .. |dqroboticsmatlab| image:: https://img.shields.io/badge/dqrobotics-matlab-green
 
-.. |cpp| image :: https://img.shields.io/badge/C%2B%2B-11-blue
-.. |dqroboticscpp| :: https://github.com/dqrobotics/cpp/actions/workflows/cpp_build_ubuntu.yml/badge.svg?branch=master
+.. |cpp| image image:: https://img.shields.io/badge/C%2B%2B-11-blue
+.. |dqroboticscpp| image:: https://github.com/dqrobotics/cpp/actions/workflows/cpp_build_ubuntu.yml/badge.svg?branch=master
 
 
 
