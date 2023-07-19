@@ -1,9 +1,9 @@
 ===================================
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 ===================================
-|Generic badge|
 
-.. |Generic badge| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
+
+.. image:: https://img.shields.io/github/license/dqrobotics/matlab
    :target:
    
 .. image:: ../images/cover.png
