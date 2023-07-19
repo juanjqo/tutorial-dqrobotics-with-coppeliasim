@@ -2,7 +2,7 @@
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 ===================================
 |license| |visitors| |ubuntu| |windows| |mac|
-|matlab| |python| |cpp| 
+|matlab| |python| |cpp| |coppelia|
 
 .. |license| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
 
@@ -21,8 +21,10 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 .. |matlabtest| image:: https://github.com/dqrobotics/matlab/actions/workflows/matlab_test.yml/badge.svg?branch=master
 .. |dqroboticsmatlab| image:: https://img.shields.io/badge/dqrobotics-matlab-green
 
-.. |cpp| image image:: https://img.shields.io/badge/C%2B%2B-11-blue
+.. |cpp| image:: https://img.shields.io/badge/C%2B%2B-11-blue
 .. |dqroboticscpp| image:: https://github.com/dqrobotics/cpp/actions/workflows/cpp_build_ubuntu.yml/badge.svg?branch=master
+.. |coppelia| image:: https://img.shields.io/badge/Tested_on_CoppeliaSim-4.5.1-orange
+
 
 
 
@@ -36,7 +38,6 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
    This project is unofficial and under active development.
 
 .. note::
-
    This tutorial is focused on DQ Robotics for Matlab (master branch). However, some hints for Python and C++ are also included.
 
 .. warning:: 
