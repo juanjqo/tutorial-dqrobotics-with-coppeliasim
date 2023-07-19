@@ -1,10 +1,10 @@
 ===================================
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 ===================================
+|license|
 
+.. |license| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
 
-.. image:: https://img.shields.io/github/license/dqrobotics/matlab
-   :target:
    
 .. image:: ../images/cover.png
    :align: center
