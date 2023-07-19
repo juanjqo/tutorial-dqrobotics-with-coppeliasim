@@ -1,15 +1,17 @@
 ===================================
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 ===================================
-|license| |visitors| |ubuntu| |windows|
+|license| |visitors| |ubuntu| |windows| |mac|
 
 .. |license| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
 
-.. |visitors| image:: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftutorial-dqrobotics-with-coppeliasim.readthedocs.io%2Fen%2Flatest%2Findex.html%23&countColor=%23dce775&style=flat-square 
+.. |visitors| image:: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftutorial-dqrobotics-with-coppeliasim.readthedocs.io%2Fen%2Flatest%2Findex.html%23&countColor=%23ff8a65&style=flat-square 
 
-.. |windows| image:: https://img.shields.io/badge/OS-Windows_11_64_Bits-blue
+.. |windows| image:: https://img.shields.io/badge/experimental-Windows-blue
 
-.. |ubuntu| image:: https://img.shields.io/badge/OS-Ubuntu_LTS-green
+.. |mac| image:: https://img.shields.io/badge/macOS-yellow
+
+.. |ubuntu| image:: https://img.shields.io/badge/official%20support-Ubuntu LTS-orange
 
 
 .. image:: ../images/cover.png
