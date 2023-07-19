@@ -1,5 +1,5 @@
 =============
-Prerequisites
+Installation
 =============
 
 #. `DQ Robotics <https://dqrobotics.github.io/>`_

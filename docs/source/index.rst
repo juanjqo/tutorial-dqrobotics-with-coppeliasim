@@ -48,7 +48,8 @@ Contents
 
 .. toctree::
    
-   prerequisites
+   about
+   installation
    usage
    api
 
