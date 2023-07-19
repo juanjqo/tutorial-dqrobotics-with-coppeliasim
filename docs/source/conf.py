@@ -152,8 +152,8 @@ html_theme_options = {
     "use_edit_page_button": False,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    "navbar_center": ["version-switcher", "navbar-nav"],
-    "announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
+    #"navbar_center": ["version-switcher", "navbar-nav"],
+    #"announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
     # "show_nav_level": 2,
     # "navbar_start": ["navbar-logo"],
     # "navbar_end": ["theme-switcher", "navbar-icon-links"],
@@ -170,9 +170,9 @@ html_theme_options = {
     # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
 }
 
-html_sidebars = {
-    "**": ["sidebar-nav-bs", "sidebar-ethical-ads"]
-}
+#html_sidebars = {
+#    "**": ["about.html", "installation.html"]
+#}
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
