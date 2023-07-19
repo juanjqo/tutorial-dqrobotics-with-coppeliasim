@@ -5,13 +5,13 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 
 .. |license| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
 
-.. |visitors| image:: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftutorial-dqrobotics-with-coppeliasim.readthedocs.io%2Fen%2Flatest%2Findex.html%23&countColor=%23ff8a65&style=flat-square 
+.. |visitors| image:: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftutorial-dqrobotics-with-coppeliasim.readthedocs.io%2Fen%2Flatest%2Findex.html%23&countColor=%f400ffff&style=flat-square 
 
-.. |windows| image:: https://img.shields.io/badge/experimental-Windows-blue
+.. |windows| image:: https://img.shields.io/badge/limited%20support-Windows-blue
 
 .. |mac| image:: https://img.shields.io/badge/macOS-yellow
 
-.. |ubuntu| image:: https://img.shields.io/badge/official%20support-Ubuntu LTS-orange
+.. |ubuntu| image:: https://img.shields.io/badge/official%20support-Ubuntu%20LTS-orange
 
 
 .. image:: ../images/cover.png
