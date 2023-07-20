@@ -145,7 +145,7 @@ html_theme_options = {
     # "github_url": "https://github.com/pydata/pydata-sphinx-theme",
     # "twitter_url": "https://twitter.com/PyData",
     "logo": {
-        "text": "Tutorial: DQ Robotics with CoppeliaSim",
+        "text": "Home",
         "image_dark": "/docs/build/html/_images/logo.svg",
         "alt_text": "Tutorial: DQ Robotics with CoppeliaSim",
     },
