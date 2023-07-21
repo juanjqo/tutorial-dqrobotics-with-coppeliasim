@@ -3,3 +3,5 @@ sphinx-copybutton
 sphinx-design
 sphinx
 pydata-sphinx-theme
+sphinx-togglebutton
+pydata-sphinx-theme

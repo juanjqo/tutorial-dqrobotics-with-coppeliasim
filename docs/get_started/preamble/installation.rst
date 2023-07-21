@@ -2,10 +2,23 @@
 Installation
 =============
 
-```{admonition} A sidebar admonition!
-:class: sidebar note
-Some sidebar content.
-```
+.. admonition:: YouTube
+    :class: dropdown admonition-youtube
+
+    ..  youtube:: e8ajS3FVMUI
+
+.. admonition:: Custom title!
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+.. sidebar:: Ch'ien / The Creative
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+    .. image:: https://source.unsplash.com/200x200/daily?cute+puppy
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 #. `DQ Robotics <https://dqrobotics.github.io/>`_
 

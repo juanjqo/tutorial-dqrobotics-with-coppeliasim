@@ -28,6 +28,9 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx_design',
+    'sphinx.ext.todo',
+    'sphinx_togglebutton',
+    'sphinxcontrib.youtube'
 ]
 
 intersphinx_mapping = {
@@ -38,8 +41,11 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
-
+html_css_files = ["custom.css"]
+html_context = {
+   # ...
+   "default_mode": "light"
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
