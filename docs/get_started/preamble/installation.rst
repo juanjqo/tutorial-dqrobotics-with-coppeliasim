@@ -2,6 +2,11 @@
 Installation
 =============
 
+```{admonition} A sidebar admonition!
+:class: sidebar note
+Some sidebar content.
+```
+
 #. `DQ Robotics <https://dqrobotics.github.io/>`_
 
 .. tab-set::

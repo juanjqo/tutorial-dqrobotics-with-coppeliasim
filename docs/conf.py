@@ -27,6 +27,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinx_design',
 ]
 
 intersphinx_mapping = {
@@ -98,7 +99,7 @@ html_theme_options = {
         "image_dark": "./_static/basics/logo.svg",
         "alt_text": "MyProject",
     },
-    "use_edit_page_button": True,
+    "use_edit_page_button": False,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     #"navbar_center": ["version-switcher", "navbar-nav"],
@@ -119,7 +120,7 @@ html_theme_options = {
 }
 
 html_sidebars = {
-    "**": ["sidebar-nav-bs"],
+    "**": ["sidebar-nav-bs", "search-field"],
     "index": [],
 }
 
