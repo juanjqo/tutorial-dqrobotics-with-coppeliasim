@@ -1,11 +1,11 @@
-Section B
-*********
+Advanced topics
+***************
 
 This is the section B
 
 .. toctree::
    :hidden:
 
-   installation
+
    topic1
    topic2

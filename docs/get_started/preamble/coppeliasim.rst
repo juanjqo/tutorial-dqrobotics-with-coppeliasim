@@ -1,4 +1,4 @@
-DQ Robotics
+CoppeliaSim
 ===========
 
 .. note::

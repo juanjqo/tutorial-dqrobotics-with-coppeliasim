@@ -64,13 +64,14 @@ html_theme_options = {
             "name": "Learn DQ Robotics",
         },
         {
-            "url": "https://hal.science/hal-01478225v1",
-            "name": "Learn Dual Quaternion Algebra",
-        },
-        {
             "url": "https://ros2-tutorial.readthedocs.io/en/latest/",
             "name": "Learn ROS2",
         },
+        {
+            "url": "https://hal.science/hal-01478225v1",
+            "name": "Learn Dual Quaternion Algebra",
+        },
+
     ],
     "header_links_before_dropdown": 4,
     "icon_links": [
@@ -102,7 +103,7 @@ html_theme_options = {
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     #"navbar_center": ["version-switcher", "navbar-nav"],
     #"announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
-    # "show_nav_level": 2,
+    "show_nav_level": 2,
     # "navbar_start": ["navbar-logo"],
     # "navbar_end": ["theme-switcher", "navbar-icon-links"],
     # "navbar_persistent": ["search-button"],
@@ -118,7 +119,7 @@ html_theme_options = {
 
 html_sidebars = {
     "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
-    "index": [],
+    #"index": [],
 }
 
 # -- Options for EPUB output

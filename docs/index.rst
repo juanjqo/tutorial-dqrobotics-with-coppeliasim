@@ -6,7 +6,7 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 
 .. |license| image:: https://img.shields.io/github/license/dqrobotics/matlab.svg
 
-.. |visitors| image:: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftutorial-dqrobotics-with-coppeliasim.readthedocs.io%2Fen%2Flatest%2Findex.html%23&countColor=%23ff69b4&style=plastic
+.. |visitors| image:: https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Ftutorial-dqrobotics-with-coppeliasim.readthedocs.io%2Fen%2Flatest%2Findex.html&countColor=%23697689&style=plastic
 
 .. |windows| image:: https://img.shields.io/badge/partial%20support-Windows%20&%20macOS-blue
 
@@ -50,14 +50,17 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 Contents
 --------
 
+#. :doc:`Preamble <get_started/preamble/index>`
+    Install DQ Robotics and CoppeliaSim.
 
+#. :doc:`Fundamentals on CoppeliaSim <get_started/coppeliasim_basics/index>`
+    Some basic topics about CoppeliaSim
 
-
-
-
+#. :doc:`Static world <get_started/static_world/index>`
+    Some topics on non-dynamic scenes
 
 .. toctree::
    :hidden:
 
-   preamble/index
-   installation/index
+   get_started/index
+   advanced/index
