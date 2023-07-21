@@ -84,7 +84,7 @@ html_theme_options = {
         {
             "name": "DQ Robotics",
             "url": "https://dqrobotics.github.io/",
-            "icon": "https://raw.githubusercontent.com/juanjqo/pydata-sphinx-theme-template/main/docs/_static/dqrobotics_logo_infinity2.svg",
+            "icon": "https://raw.githubusercontent.com/juanjqo/pydata-sphinx-theme-template/main/docs/_static/basics/dqrobotics_logo_infinity2.svg",
             "type": "local",
             "attributes": {"target": "_blank"},
         },
