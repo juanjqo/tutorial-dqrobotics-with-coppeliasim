@@ -19,12 +19,12 @@ Installation
                cd ~
                git clone https://github.com/dqrobotics/matlab.git
 
-         .. image:: ../images/install_matlab_using_powershell.gif
+         .. image:: /_static/basics/install_matlab_using_powershell.gif
             :align: center
 
         #. Set the path in Matlab
 
-         .. image:: ../images/set_path.gif
+         .. image:: /_static/basics/set_path.gif
             :align: center    
 
         |
@@ -33,7 +33,7 @@ Installation
 
         Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on ``<> Code``, and clik on ``Download ZIP``.
 
-         .. image:: ../images/install_matlab_zip.png
+         .. image:: /_static/basics/install_matlab_zip.png
            :align: center       
 
         Unzip the ``matlab-master.zip`` file and add it to the Path in Matlab.   
