@@ -7,6 +7,11 @@ Installation
 
     ..  youtube:: e8ajS3FVMUI
 
+.. admonition:: A sidebar admonition!
+    :class: sidebar note
+
+    Some sidebar content.
+
 .. admonition:: Custom title!
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
