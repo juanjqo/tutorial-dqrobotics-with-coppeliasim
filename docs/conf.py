@@ -119,7 +119,7 @@ html_theme_options = {
 
 html_sidebars = {
     "**": ["sidebar-nav-bs", "sidebar-ethical-ads"],
-    #"index": [],
+    "index": [],
 }
 
 # -- Options for EPUB output
