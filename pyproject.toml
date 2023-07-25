@@ -6,3 +6,4 @@ build-backend = "flit_core.buildapi"
 name = "MyProject"
 authors = [{name = "Juan Jose Quiroz Omana", email = "myemail.com"}]
 dynamic = ["version", "description"]
+dependencies=["accessible-pygments"]

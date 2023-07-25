@@ -7,3 +7,5 @@ sphinx-togglebutton
 pydata-sphinx-theme
 sphinxcontrib-youtube
 sphinx-copybutton
+sphinx-github-style
+accessible-pygments
