@@ -6,3 +6,4 @@ pydata-sphinx-theme
 sphinx-togglebutton
 pydata-sphinx-theme
 sphinxcontrib-youtube
+sphinx-copybutton

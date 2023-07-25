@@ -30,7 +30,8 @@ extensions = [
     'sphinx_design',
     'sphinx.ext.todo',
     'sphinx_togglebutton',
-    'sphinxcontrib.youtube'
+    'sphinxcontrib.youtube',
+    'sphinx_copybutton',
 ]
 
 intersphinx_mapping = {
