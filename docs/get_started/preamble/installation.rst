@@ -17,11 +17,6 @@ Installation
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 
-.. sidebar:: Warning
-
-    .. image:: ../../_static/warning.png
-
-    This is a warning box.
 
 #. `DQ Robotics <https://dqrobotics.github.io/>`_
 
