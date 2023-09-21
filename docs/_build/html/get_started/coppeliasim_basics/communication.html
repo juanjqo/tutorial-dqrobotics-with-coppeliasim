@@ -494,6 +494,7 @@ document.write(`
                   
   <section id="communication-test">
 <h1>Communication test<a class="headerlink" href="#communication-test" title="Permalink to this heading">#</a></h1>
+<img alt="../../_images/frame_x_sc.png" class="align-center" src="../../_images/frame_x_sc.png" />
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 </input><label class="sd-tab-label" for="sd-tab-item-0">
@@ -509,9 +510,12 @@ Matlab</label><div class="sd-tab-content docutils">
     <span class="n">vi</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">19997</span><span class="p">);</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">start_simulation</span><span class="p">();</span>
     <span class="n">pause</span><span class="p">(</span><span class="mf">0.1</span><span class="p">);</span>
-    <span class="n">vi</span><span class="o">.</span><span class="n">stop_simulation</span><span class="p">();</span>
+<span class="hll">    <span class="n">x</span> <span class="o">=</span> <span class="n">vi</span><span class="o">.</span><span class="n">get_object_pose</span><span class="p">(</span><span class="s1">&#39;Frame_x&#39;</span><span class="p">);</span>
+</span>    <span class="n">vi</span><span class="o">.</span><span class="n">stop_simulation</span><span class="p">();</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">disconnect</span><span class="p">();</span>
-    <span class="n">disp</span><span class="p">(</span><span class="s1">&#39;The test was successful!&#39;</span><span class="p">)</span>
+    <span class="n">disp</span><span class="p">(</span><span class="s1">&#39;Position: &#39;</span><span class="p">)</span>
+    <span class="n">translation</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">disp</span><span class="p">(</span><span class="s1">&#39;The test was succesful!&#39;</span><span class="p">)</span>
 <span class="n">catch</span> <span class="n">ME</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">stop_simulation</span><span class="p">();</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">disconnect</span><span class="p">();</span>
@@ -532,8 +536,10 @@ Python</label><div class="sd-tab-content docutils">
     <span class="n">vi</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">19997</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">start_simulation</span><span class="p">()</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
-    <span class="n">vi</span><span class="o">.</span><span class="n">stop_simulation</span><span class="p">()</span>
+<span class="hll">    <span class="n">x</span> <span class="o">=</span> <span class="n">vi</span><span class="o">.</span><span class="n">get_object_pose</span><span class="p">(</span><span class="s1">&#39;Frame_x&#39;</span><span class="p">)</span>
+</span>    <span class="n">vi</span><span class="o">.</span><span class="n">stop_simulation</span><span class="p">()</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Position: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">translation</span><span class="p">())</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The test was successful!&#39;</span><span class="p">)</span>
 
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exp</span><span class="p">:</span>
@@ -554,11 +560,13 @@ C++</label><div class="sd-tab-content docutils">
 <span class="p">{</span>
 <span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">vi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DQ_VrepInterface</span><span class="p">();</span>
 <span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="mi">19997</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="s">&quot;10.198.113.136&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">19997</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">);</span>
 <span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">start_simulation</span><span class="p">();</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">this_thread</span><span class="o">::</span><span class="n">sleep_for</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">chrono</span><span class="o">::</span><span class="n">milliseconds</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
-<span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">stop_simulation</span><span class="p">();</span>
+<span class="hll"><span class="w">        </span><span class="n">DQ</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vi</span><span class="p">.</span><span class="n">get_object_pose</span><span class="p">(</span><span class="s">&quot;Frame_x&quot;</span><span class="p">);</span>
+</span><span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">stop_simulation</span><span class="p">();</span>
 <span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">disconnect</span><span class="p">();</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;Position: &quot;</span><span class="o">&lt;&lt;</span><span class="n">x</span><span class="p">.</span><span class="n">translation</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">&quot;the test was successful!&quot;</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
 <span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">exception</span><span class="o">&amp;</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">e</span><span class="p">.</span><span class="n">what</span><span class="p">()</span><span class="o">&lt;&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
@@ -566,6 +574,7 @@ C++</label><div class="sd-tab-content docutils">
 <span class="w">        </span><span class="n">vi</span><span class="p">.</span><span class="n">disconnect</span><span class="p">();</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>
