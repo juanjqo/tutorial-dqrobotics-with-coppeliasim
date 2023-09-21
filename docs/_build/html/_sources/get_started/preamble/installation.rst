@@ -4,6 +4,9 @@ Installation
 .. _tutorial: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html
 .. |tutorial| replace:: **tutorial**
 
+.. _environment: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv
+.. |environment| replace:: **environment**
+
 .. admonition:: YouTube
     :class: dropdown admonition-youtube
 
@@ -20,14 +23,14 @@ Installation
 
 
 
-#. `DQ Robotics <https://dqrobotics.github.io/>`_
+`DQ Robotics <https://dqrobotics.github.io/>`_
 
 .. tab-set::
 
     .. tab-item:: Matlab
 
 
-        #. Using `git <https://git-scm.com/>`_ commands:
+        Using `git <https://git-scm.com/>`_ commands:
 
          .. code-block:: python
 
@@ -37,7 +40,7 @@ Installation
          .. image:: /_static/basics/install_matlab_using_powershell.gif
             :align: center
 
-        #. Set the path in Matlab
+        Set the path in Matlab
 
          .. image:: /_static/basics/set_path.gif
             :align: center    
@@ -70,6 +73,9 @@ Installation
                If you are unfamiliar with Python, check this |tutorial|_
                before installing the library.
 
+            .. warning::
+               It is a good practice to isolate your Python |environment|_.
+
             Open a terminal and run:
 
             .. code-block:: python
@@ -81,7 +87,12 @@ Installation
 
     .. tab-item:: C++
 
-       C++
+            Open a terminal and run:
 
-       
+            .. code-block:: python
+
+                sudo add-apt-repository ppa:dqrobotics-dev/development
+                sudo apt-get update
+                sudo apt-get install libdqrobotics libdqrobotics-interface-vrep
+
 
