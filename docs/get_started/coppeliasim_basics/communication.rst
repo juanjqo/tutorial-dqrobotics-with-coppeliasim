@@ -1,5 +1,2 @@
 Communication test
 ******************
-
-
-hola
