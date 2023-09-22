@@ -1,7 +1,10 @@
 Get started
 ***********
 
-This is the section A
+.. note::
+   This tutorial is focused on DQ Robotics for Matlab (master branch). However, some hints for Python and C++ are also included.
+
+
 
 :bdg-primary:`primary`
 :bdg-secondary:`secondary`
@@ -9,8 +12,6 @@ This is the section A
 :bdg-primary-line:`primary outline`
 :bdg-secondary-line:`secondary outline`
 :bdg-success-line:`success outline`
-
-
 
 
 Cards
