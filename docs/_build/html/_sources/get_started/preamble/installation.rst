@@ -2,6 +2,12 @@
 Installation
 =============
 
+.. _tutorial: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html
+.. |tutorial| replace:: **tutorial**
+
+.. _environment: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv
+.. |environment| replace:: **environment**
+
 .. admonition:: YouTube
     :class: dropdown admonition-youtube
 
@@ -60,52 +66,29 @@ Installation
 
     .. tab-item:: Python
 
-         .. code-block:: python
+            .. note::
+               If you are unfamiliar with Python, check this |tutorial|_
+               before installing the library.
 
-            from dqrobotics import *
-            from dqrobotics.interfaces.vrep  import DQ_VrepInterface
-            from dqrobotics.robot_control import ControlObjective
-            from dqrobotics.robot_control import DQ_PseudoinverseController
-            from dqrobotics.robots import FrankaEmikaPandaRobot
-            import time
+            .. warning::
+               It is a good practice to isolate your Python |environment|_.
 
-            vi = DQ_VrepInterface()
 
-            try:
-                vi.connect(19997, 100, 10)
-                vi.set_synchronous(True)
-                vi.start_simulation()
-                time.sleep(0.1)
+            Open a terminal and run:
 
-                jointnames = ("Franka_joint1", "Franka_joint2",
-                              "Franka_joint3", "Franka_joint4",
-                              "Franka_joint5", "Franka_joint6",
-                              "Franka_joint7")
+            .. code-block:: python
 
-                robot = FrankaEmikaPandaRobot.kinematics()
-                controller = DQ_PseudoinverseController(robot)
-                controller.set_gain(0.5)
-                controller.set_damping(0.01)
-                controller.set_control_objective(ControlObjective.Translation)
-                controller.set_stability_threshold(0.00001)
-                pd = vec4(0.2 * i_ + 0.3 * j_ + 0.3 * k_)
+                python3 -m pip install --user --pre dqrobotics
 
-                while not controller.system_reached_stable_region():
-                    q = vi.get_joint_positions(jointnames)
-                    u = controller.compute_setpoint_control_signal(q, pd)
-                    vi.set_joint_target_velocities(jointnames, u)
-                    vi.trigger_next_simulation_step()
-
-                vi.stop_simulation()
-                vi.disconnect()
-
-            except Exception as exp:
-                print(exp)
-                vi.disconnect_all()
 
     .. tab-item:: C++
 
-       C++
+            Open a terminal and run:
 
+            .. code-block:: python
+
+                sudo add-apt-repository ppa:dqrobotics-dev/development
+                sudo apt-get update
+                sudo apt-get install libdqrobotics libdqrobotics-interface-vrep
        
 

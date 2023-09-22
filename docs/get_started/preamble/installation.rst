@@ -65,6 +65,7 @@ Installation
 
 
     .. tab-item:: Python
+
             .. note::
                If you are unfamiliar with Python, check this |tutorial|_
                before installing the library.
