@@ -67,12 +67,7 @@ Installation
 
     .. tab-item:: Python
 
-            .. note::
-               If you are unfamiliar with Python, check this |tutorial|_
-               before installing the library.
 
-            .. warning::
-               It is a good practice to isolate your Python |environment|_.
 
             Open a terminal and run:
 
