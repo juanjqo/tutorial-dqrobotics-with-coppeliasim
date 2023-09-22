@@ -30,6 +30,9 @@ Installation
 
     .. tab-item:: Matlab
 
+        .. warning::
+           DQ Robotics for Matlab is distributed as a LGPLV3 licensed package. Matlab, however, is not free software and other third-party toolboxes may also not be free.
+
 
         #. Using `git <https://git-scm.com/>`_ commands:
 

@@ -13,6 +13,7 @@ About this tutorial
 This tutorial aims to teach the basic concepts about the DQ Robotics library and
 the CoppeliaSim simulator.
 
-:download:`pdf <scenes/DQ_Robotics_lab.ttt>`
+
+
 .. image:: /_static/basics/basic_scene.png
     :align: center
