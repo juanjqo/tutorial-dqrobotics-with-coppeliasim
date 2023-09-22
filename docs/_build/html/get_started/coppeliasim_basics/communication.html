@@ -503,6 +503,7 @@ Matlab</label><div class="sd-tab-content docutils">
 <span class="n">close</span> <span class="nb">all</span><span class="p">;</span>
 <span class="n">clc</span><span class="p">;</span>
 
+
 <span class="n">include_namespace_dq</span><span class="p">;</span>
 <span class="n">vi</span> <span class="o">=</span> <span class="n">DQ_VrepInterface</span><span class="p">();</span>
 
@@ -530,9 +531,12 @@ Python</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">dqrobotics.interfaces.vrep</span> <span class="kn">import</span> <span class="n">DQ_VrepInterface</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
+
 <span class="n">vi</span> <span class="o">=</span> <span class="n">DQ_VrepInterface</span><span class="p">()</span>
 
+
 <span class="k">try</span><span class="p">:</span>
+
     <span class="n">vi</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">19997</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
     <span class="n">vi</span><span class="o">.</span><span class="n">start_simulation</span><span class="p">()</span>
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
@@ -541,6 +545,7 @@ Python</label><div class="sd-tab-content docutils">
     <span class="n">vi</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Position: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">translation</span><span class="p">())</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The test was successful!&#39;</span><span class="p">)</span>
+
 
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exp</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">exp</span><span class="p">)</span>

@@ -29,7 +29,6 @@ Installation
 
     .. tab-item:: Matlab
 
-
         Using `git <https://git-scm.com/>`_ commands:
 
          .. code-block:: python

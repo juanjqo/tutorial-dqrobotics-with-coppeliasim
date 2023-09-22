@@ -12,11 +12,12 @@ Communication test
 
 
          .. code-block:: python
-                :emphasize-lines: 12
+                :emphasize-lines: 13
 
                 clear all;
                 close all;
                 clc;
+
 
                 include_namespace_dq;
                 vi = DQ_VrepInterface();
@@ -41,14 +42,17 @@ Communication test
     .. tab-item:: Python
 
          .. code-block:: python
-                :emphasize-lines: 10
+                :emphasize-lines: 13
 
                 from dqrobotics.interfaces.vrep import DQ_VrepInterface
                 import time
 
+
                 vi = DQ_VrepInterface()
 
+
                 try:
+
                     vi.connect('127.0.0.1', 19997, 100, 10)
                     vi.start_simulation()
                     time.sleep(0.1)
@@ -57,6 +61,7 @@ Communication test
                     vi.disconnect()
                     print("Position: ", x.translation())
                     print('The test was successful!')
+
 
                 except Exception as exp:
                     print(exp)
