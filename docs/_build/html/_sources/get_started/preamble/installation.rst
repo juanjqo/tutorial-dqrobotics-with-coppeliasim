@@ -56,8 +56,7 @@ Installation
         Unzip the :bdg-secondary:`matlab-master.zip` file and add it to the Path in Matlab.
 
         Add the following folders to the path
-        C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\legacyRemoteApi\remoteApiBindings\matlab
-        C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\legacyRemoteApi\remoteApiBindings\lib\lib\YOUR_OS
+
 
 
 
@@ -68,12 +67,7 @@ Installation
 
     .. tab-item:: Python
 
-            .. note::
-               If you are unfamiliar with Python, check this |tutorial|_
-               before installing the library.
 
-            .. warning::
-               It is a good practice to isolate your Python |environment|_.
 
             Open a terminal and run:
 
