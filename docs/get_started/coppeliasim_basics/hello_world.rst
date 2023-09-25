@@ -43,7 +43,7 @@ Roughly speaking, you need to do the following steps:
 
 #. define an object of the :file:`DQ_VrepInterface()` class.
 #. establish the connection to an specific IP and port. If you are running both the script and the simulation
-   in the same computer, the default IP is :file:`127.0.0.1`. The default port is :file:`19997`
+   in the same computer, the default IP is :file:`127.0.0.1`. The default port is :file:`19997`.
 #. start the simulation.
 #. get the object pose.
 #. stop the simulation.
