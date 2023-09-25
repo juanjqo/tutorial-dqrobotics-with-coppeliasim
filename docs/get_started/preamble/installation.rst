@@ -27,13 +27,29 @@ Installation
                cd ~
                git clone https://github.com/dqrobotics/matlab.git
 
-        .. image:: /_static/basics/install_matlab_using_powershell.gif
-            :align: center
 
-        Set the path in Matlab
+        Set the path in Matlab. Example:
 
-        .. image:: /_static/basics/set_path.gif
-            :align: center    
+
+        .. tab-set::
+
+            .. tab-item:: Ubuntu x64
+
+                .. raw:: html
+
+                    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+                     src="../../_static/videos/add_path_windows.mp4"
+                     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+                     Your browser does not support the video tag.  </video>
+
+            .. tab-item:: Windows x64
+
+                .. raw:: html
+
+                    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+                     src="../../_static/videos/add_path_windows.mp4"
+                     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+                     Your browser does not support the video tag.  </video>
 
         |
         
