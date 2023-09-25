@@ -64,7 +64,14 @@ Templates: asynchronous mode
 ----------------------------
 
 The following templates are minimal scripts containing good practices for Matlab, Python, and C++. Those are based
-on hundreds of feedbacks provided by the Maintainers of the DQ Robotics. The Python scripts are based on this awesome |tutorial|_.
+on hundreds of feedbacks provided by the Maintainers of the DQ Robotics.
+
+The templates show how to establish communication with a CoppeliaSim scene using the default :file:`port`. It assumed that both the script and your
+the scene are running in the same computer (default :file:`IP`). Furthermore, the :file:`asynchronous mode` (default mode) is used.
+This latter means that the simulation on CoppeliaSim will advance without taking into account the progress of your script. Learn more in |synch|_.
+
+.. image:: /_static/basics/default_mode.png
+
 
 .. tab-set::
 
