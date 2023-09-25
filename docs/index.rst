@@ -30,10 +30,16 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 .. |dqroboticslogo| image:: /_static/basics/dqrobotics_logo_infinity.svg
 .. |dqroboticslogo2| image:: /_static/basics/dqrobotics_logo_infinity2.svg
 
+.. button-ref:: get-started
+    :ref-type: ref
+    :color: dark
+    :shadow:
+    :align: center
+
+    Get started
 
 .. image:: /_static/basics/cover.png
    :align: center
-
 
 .. raw:: html
 
@@ -41,7 +47,9 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
    src="_static/videos/videocover.mp4"
    type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
    Your browser does not support the video tag.  </video>
+   
 
+            
 .. note::
    If you’re looking for the DQ Robotics documentation, this is **NOT** it. For the DQ Robotics documentation,
    refer to this `link <https://dqroboticsgithubio.readthedocs.io/en/latest/>`_.
