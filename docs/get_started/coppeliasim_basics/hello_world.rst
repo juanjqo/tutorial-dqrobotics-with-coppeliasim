@@ -1,6 +1,6 @@
 Hello world
 ***********
-.. _more-info: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html
+.. _more-info: https://dqroboticsgithubio.readthedocs.io/en/latest/installation/python.html
 .. |more-info| replace:: **DQ Robotics documentation**
 
 
@@ -13,9 +13,9 @@ in the DQ_Robotics_lab.ttt scene.
 .. warning::
    MacOS users could require additional steps to run a simulation.
 
-   #. add :file:`simRemoteApi.start(19997)` to the main script of the scene
-   #. start the simulation.
-   #. run your script.
+   #. Add :file:`simRemoteApi.start(19997)` to the main script of the scene.
+   #. Start the simulation.
+   #. Run your script.
 
    Check the |more-info|_ for more details.
 
@@ -41,13 +41,13 @@ To get the pose (position and orientation) of an object we need to use the metho
 
 Roughly speaking, you need to do the following steps:
 
-#. define an object of the :file:`DQ_VrepInterface()` class.
-#. establish the connection to an specific IP and port. If you are running both the script and the simulation
+#. Define an object of the :file:`DQ_VrepInterface()` class.
+#. Establish the connection to an specific IP and port. If you are running both the script and the simulation
    in the same computer, the default IP is :file:`127.0.0.1`. The default port is :file:`19997`.
-#. start the simulation.
-#. get the object pose.
-#. stop the simulation.
-#. disconnect.
+#. Start the simulation.
+#. Get the object pose.
+#. Stop the simulation.
+#. Disconnect.
 
 |
 
