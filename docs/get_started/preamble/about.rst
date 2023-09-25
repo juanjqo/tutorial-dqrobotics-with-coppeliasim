@@ -1,3 +1,5 @@
+.. _download-scene:
+
 ===================
 About this tutorial
 ===================
@@ -12,6 +14,7 @@ About this tutorial
 
 This tutorial aims to teach the basic concepts about the DQ Robotics library and
 the CoppeliaSim simulator.
+
 
 .. grid::
 

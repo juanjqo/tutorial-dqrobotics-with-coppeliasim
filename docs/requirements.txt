@@ -9,3 +9,4 @@ sphinxcontrib-youtube
 sphinx-copybutton
 sphinx-github-style
 accessible-pygments
+sphinx-preview

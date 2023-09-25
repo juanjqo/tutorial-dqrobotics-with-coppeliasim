@@ -27,6 +27,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'hoverxref.extension',
     'sphinx_design',
     'sphinx.ext.todo',
     'sphinx_togglebutton',
@@ -35,6 +36,8 @@ extensions = [
     #'sphinx_github_style',
     '_ext.mybashlexer',
 ]
+
+
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
@@ -55,9 +58,6 @@ html_context = {
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 #html_theme = 'sphinx_rtd_theme'
-
-
-
 html_theme = "pydata_sphinx_theme"
 
 
@@ -130,7 +130,7 @@ html_theme_options = {
 
     #"primary_sidebar_end": ["sidebar-ethical-ads"],
     # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
-    "pygment_light_style": "monokai",
+    "pygment_light_style": "dracula",
     "pygment_dark_style": "monokai",
 }
 
