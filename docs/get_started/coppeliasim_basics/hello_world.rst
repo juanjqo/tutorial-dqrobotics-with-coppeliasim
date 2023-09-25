@@ -7,6 +7,15 @@ Hello world
 .. _more-info2: https://www.coppeliarobotics.com/helpFiles/en/accessingSceneObjects.htm
 .. |more-info2| replace:: **Accessing scene objects programmatically**
 
+
+.. _synch: https://www.coppeliarobotics.com/helpFiles/en/remoteApiModusOperandi.htm
+.. |synch| replace:: **synchronous mode**
+
+
+.. _tutorial: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html
+.. |tutorial| replace:: **tutorial**
+
+
 It is time to run your first example! The goal is to get the position of the object :file:`Frame_x`, which is located in the position :file:`[-1,0,0]`
 in the DQ_Robotics_lab.ttt scene.
 
@@ -33,10 +42,10 @@ Open the DQ_Robotics_lab.ttt scene (see :ref:`download-scene`).
 
     .. image:: /_static/Tips.png
 
-    Use try/catch statements to handle different types of errors. If an exception is thrown, stop and close the communication
+    Use **try/catch** statements to handle different types of errors. If an exception is thrown, stop and close the communication
     in the catch statements.
 
-To get the pose (position and orientation) of an object we need to use the method :file:`get_object_pose("OBJECT_PATH")` of the class
+To get the pose (position and orientation) of an object we need to use the method :file:`get_object_pose()` of the class
 :file:`DQ_VrepInterface()`.
 
 Roughly speaking, you need to do the following steps:
@@ -51,8 +60,11 @@ Roughly speaking, you need to do the following steps:
 
 |
 
-Templates
----------
+Templates: asynchronous mode
+----------------------------
+
+The following templates are minimal scripts containing good practices for Matlab, Python, and C++. Those are based
+on hundreds of feedbacks provided by the Maintainers of the DQ Robotics. The Python scripts are based on this awesome |tutorial|_.
 
 .. tab-set::
 
@@ -101,7 +113,7 @@ Templates
 
 
 .. warning::
-    In case you use the object name, you are required to use de :file:`deprecated name`.
+    In case you use the object name, you are required to use the :file:`deprecated name`.
     The deprecated name does not always coincide with the object name displayed in the scene hierarchy.
 
     .. image:: /_static/basics/deprecated_name.png

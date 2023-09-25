@@ -7,7 +7,7 @@ vi = DQ_VrepInterface()
 
 def main() -> None:
     try:
-        vi.connect('127.0.0.1', 19997, 100, 10)
+        vi.connect("127.0.0.1", 19997, 100, 10)
         vi.start_simulation()
         time.sleep(0.1)
         #---------------------------------------------------------
