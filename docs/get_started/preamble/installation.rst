@@ -8,23 +8,8 @@ Installation
 .. _environment: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv
 .. |environment| replace:: **environment**
 
-.. admonition:: YouTube
-    :class: dropdown admonition-youtube
-
-    ..  youtube:: e8ajS3FVMUI
-
-.. admonition:: A sidebar admonition!
-    :class: sidebar note
-
-    Some sidebar content.
-
-.. admonition:: Custom title!
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-
-
-#. `DQ Robotics <https://dqrobotics.github.io/>`_
+.. _repository: https://github.com/dqrobotics/matlab.git
+.. |repository| replace:: **repository**
 
 .. tab-set::
 
@@ -34,7 +19,8 @@ Installation
            DQ Robotics for Matlab is distributed as a LGPLV3 licensed package. Matlab, however, is not free software and other third-party toolboxes may also not be free.
 
 
-        #. Using `git <https://git-scm.com/>`_ commands:
+        Clone the repository (you can use `Github Desktop <https://desktop.github.com/>`_ or `git commands <https://git-scm.com/>`_ ). If you do not want to clone
+        the repository you can ignore this step and download the Zip file, as explained below.
 
         .. code-block:: python
 
@@ -44,26 +30,44 @@ Installation
         .. image:: /_static/basics/install_matlab_using_powershell.gif
             :align: center
 
-        #. Set the path in Matlab
+        Set the path in Matlab
 
         .. image:: /_static/basics/set_path.gif
             :align: center    
 
         |
         
-        Alternatively, you can download the zip file: 
+        Download the zip file (Only if you did not clone the repository)
 
-        Go to the `repository <https://github.com/dqrobotics/matlab.git>`_ clik on :bdg-success:`<> Code`, and clik on :bdg-primary-line:`Download ZIP`.
+
+        Go to the |repository|_ clik on :bdg-success:`<> Code`, and clik on :bdg-primary-line:`Download ZIP`.
 
         .. image:: /_static/basics/install_matlab_zip.png
-           :align: center       
+           :align: center
+
+        |
 
         Unzip the :bdg-secondary:`matlab-master.zip` file and add it to the Path in Matlab.
 
+        |
+
+        Add to the path both the library and the remoteApi. Usually they are located in
+
+        .. code-block:: python
+
+            YOUR_INSTALLATION_PATH/CoppeliaRobotics/CoppeliaSimEdu/programming/legacyRemoteApi/remoteApiBindings/lib/lib/YOUR_PLATFORM
+
+        .. code-block:: python
+
+            YOUR_INSTALLATION_PATH/CoppeliaRobotics/CoppeliaSimEdu/programming/legacyRemoteApi/remoteApiBindings/matlab/matlab
 
 
+        .. raw:: html
 
-
+         <video width="100%" height="auto" autoplay muted loop playsInline> <source
+           src="_static/videos/add_path_remote_api.mp4"
+           type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+           Your browser does not support the video tag.  </video>
 
 
 
