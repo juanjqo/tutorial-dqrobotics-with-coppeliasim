@@ -17,5 +17,5 @@
    engines
    simulation_parameters
    ports
-   communication
+   hello_world
    synchronous

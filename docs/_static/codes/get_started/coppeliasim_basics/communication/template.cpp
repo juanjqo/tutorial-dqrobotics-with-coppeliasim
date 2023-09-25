@@ -9,11 +9,11 @@ int main()
         vi.connect("127.0.0.1", 19997,100,10);
         vi.start_simulation();
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        DQ x = vi.get_object_pose("/Frame_x");
+        //---------------------------------------------------------
+        // Your code here
+        //---------------------------------------------------------
         vi.stop_simulation();
         vi.disconnect();
-        std::cout<<"Position: "<<x.translation()<<std::endl;
-        std::cout<<"the test was successful!"<<std::endl;
     } catch (std::exception& e) {
         std::cout<<e.what()<<std::endl;
         vi.stop_simulation();
