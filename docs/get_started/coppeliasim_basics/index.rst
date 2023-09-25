@@ -1,7 +1,7 @@
 **Fundamentals on CoppeliaSim**
 *******************************
 
-.. _CoppeliaSim: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv
+.. _CoppeliaSim: https://www.coppeliarobotics.com/helpFiles/
 .. |CoppeliaSim| replace:: **CoppeliaSim manual**
 
 
@@ -10,15 +10,12 @@
    the basic concepts.
 
 
-
-.. image:: /_static/basics/GUI_edited.png
-    :align: center
-
-
 .. toctree::
    :hidden:
 
+   interface
    engines
    simulation_parameters
+   ports
    communication
    synchronous
