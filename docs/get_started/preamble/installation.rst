@@ -64,7 +64,7 @@ Installation
 
         |
 
-        Add to the path both the library and the remoteApi. Usually they are located in
+        Add to the path both the library and the remoteApi. Usually, they are located in
 
 
 
