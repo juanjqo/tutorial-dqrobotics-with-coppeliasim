@@ -177,6 +177,13 @@ You will have the following output:
 
 |
 
+.. raw:: html
+
+    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+     src="../../_static/videos/hello_world_test.mp4"
+     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+     Your browser does not support the video tag.  </video>
+
 .. seealso::
     You can run the script and the simulation on different computers that are on the same local network.
     To do so, in :file:`connect()` use the IP of the computer that is running the simulation. For instance, lets say
