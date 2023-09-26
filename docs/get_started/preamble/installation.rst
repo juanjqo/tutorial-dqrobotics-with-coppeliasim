@@ -22,6 +22,43 @@ Installation
 
 .. |python| image:: https://img.shields.io/pypi/pyversions/dqrobotics/21.4.0a75
 
+
+
+.. _link: https://www.coppeliarobotics.com/
+.. |link| replace:: **link**
+
+
+CoppeliaSim
+-----------
+
+Download and install CoppeliaSim EDU from this |link|_.
+
+.. note::
+    Linux users only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
+    the file you must download is :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
+    can use the graphic interface or the terminal.
+
+    .. code-block:: python
+
+        tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
+
+
+.. warning::
+   For MacOS and Matlab users: Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
+   However, that architecture must match to the version you installed of Matlab.
+
+.. raw:: html
+
+    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+     src="../../_static/videos/coppeliaSim.mp4"
+     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+     Your browser does not support the video tag.  </video>
+
+
+
+DQ Robotics
+-----------
+
 .. tab-set::
 
     .. tab-item:: Matlab
@@ -30,41 +67,46 @@ Installation
            DQ Robotics for Matlab is distributed as a LGPLV3 licensed package. Matlab, however, is not free software and other third-party toolboxes may also not be free.
 
 
-        Clone the repository (you can use `Github Desktop <https://desktop.github.com/>`_ or `git commands <https://git-scm.com/>`_ ). If you do not want to clone the repository,
-        you can ignore this step and download the zip file, as explained below.
+        Clone the repository (you can use `Github Desktop <https://desktop.github.com/>`_ or `git commands <https://git-scm.com/>`_ ). Alternatively,
+        you can download the zip file.
 
-        .. code-block:: python
+        .. tab-set::
 
-               cd ~
-               git clone https://github.com/dqrobotics/matlab.git
+            .. tab-item:: git
+
+                .. code-block:: python
+
+                       cd ~
+                       git clone https://github.com/dqrobotics/matlab.git
+
+                Set the path in Matlab. Example:
+
+                .. raw:: html
+
+                    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+                     src="../../_static/videos/add_path_windows.mp4"
+                     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+                     Your browser does not support the video tag.  </video>
+
+            .. tab-item:: zip file
+
+                    Download the zip file (Only if you did not clone the repository)
 
 
-        Set the path in Matlab. Example:
+                    Go to the |repository|_ clik on :bdg-success:`<> Code`, and clik on :bdg-primary-line:`Download ZIP`.
 
-        .. raw:: html
+                    .. image:: /_static/basics/install_matlab_zip.png
+                       :align: center
 
-            <video width="100%" height="auto" autoplay muted loop playsInline> <source
-             src="../../_static/videos/add_path_windows.mp4"
-             type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
-             Your browser does not support the video tag.  </video>
+
+                    Unzip the :bdg-secondary:`matlab-master.zip` file and add it to the Path in Matlab.
+
+
 
         |
-        
-        Download the zip file (Only if you did not clone the repository)
 
 
-        Go to the |repository|_ clik on :bdg-success:`<> Code`, and clik on :bdg-primary-line:`Download ZIP`.
-
-        .. image:: /_static/basics/install_matlab_zip.png
-           :align: center
-
-        |
-
-        Unzip the :bdg-secondary:`matlab-master.zip` file and add it to the Path in Matlab.
-
-        |
-
-        Add to the path both the library and the remoteApi. Usually, they are located in
+        Add to the path both the library and the :file:`remoteApi`. Usually, they are located in
 
 
 

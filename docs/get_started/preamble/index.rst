@@ -24,5 +24,4 @@ This tutorial aims to provide a zero-to-hero course in DQ Robotics with Coppelia
 
    about
    installation
-   coppeliasim
 
