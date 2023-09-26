@@ -1,4 +1,4 @@
-Enabling the CoppeliaSim ports
-******************************
+Enabling ports
+**************
 
 

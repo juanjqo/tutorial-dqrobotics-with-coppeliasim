@@ -11,6 +11,17 @@ Installation
 .. _repository: https://github.com/dqrobotics/matlab.git
 .. |repository| replace:: **repository**
 
+
+.. _pycharm: https://www.jetbrains.com/pycharm/
+.. |pycharm| replace:: **PyCharm**
+
+
+.. |ubuntu| image:: https://img.shields.io/badge/official%20support-Ubuntu%20LTS-orange
+
+.. |windows| image:: https://img.shields.io/badge/partial%20support-Windows%20&%20macOS-blue
+
+.. |python| image:: https://img.shields.io/pypi/pyversions/dqrobotics/21.4.0a75
+
 .. tab-set::
 
     .. tab-item:: Matlab
@@ -30,26 +41,12 @@ Installation
 
         Set the path in Matlab. Example:
 
+        .. raw:: html
 
-        .. tab-set::
-
-            .. tab-item:: Ubuntu x64
-
-                .. raw:: html
-
-                    <video width="100%" height="auto" autoplay muted loop playsInline> <source
-                     src="../../_static/videos/add_path_windows.mp4"
-                     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
-                     Your browser does not support the video tag.  </video>
-
-            .. tab-item:: Windows x64
-
-                .. raw:: html
-
-                    <video width="100%" height="auto" autoplay muted loop playsInline> <source
-                     src="../../_static/videos/add_path_windows.mp4"
-                     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
-                     Your browser does not support the video tag.  </video>
+            <video width="100%" height="auto" autoplay muted loop playsInline> <source
+             src="../../_static/videos/add_path_windows.mp4"
+             type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+             Your browser does not support the video tag.  </video>
 
         |
         
@@ -101,6 +98,8 @@ Installation
 
     .. tab-item:: Python
 
+            |ubuntu| |windows| |python|
+
             .. tip::
                If you are unfamiliar with Python, check this |tutorial|_
                before installing the library.
@@ -116,7 +115,24 @@ Installation
                 python3 -m pip install --user --pre dqrobotics
 
 
+            .. hint::
+
+                |pycharm| is an excellent multiplatform software to manage your Python scripts and your Python |environment|_.
+                The Community Edition is free and open source.
+
+            Example using PyCharm:
+
+            .. raw:: html
+
+                    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+                     src="../../_static/videos/pycharm.mp4"
+                     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+                     Your browser does not support the video tag.  </video>
+
+
     .. tab-item:: C++
+
+            |ubuntu|
 
             Open a terminal and run:
 
