@@ -66,26 +66,36 @@ Installation
 
         Add to the path both the library and the remoteApi. Usually they are located in
 
-        .. code-block:: python
 
-            YOUR_INSTALLATION_PATH/CoppeliaRobotics/CoppeliaSimEdu/programming/legacyRemoteApi/remoteApiBindings/lib/lib/YOUR_PLATFORM
-
-        .. code-block:: python
-
-            YOUR_INSTALLATION_PATH/CoppeliaRobotics/CoppeliaSimEdu/programming/legacyRemoteApi/remoteApiBindings/matlab/matlab
 
         .. tab-set::
 
             .. tab-item:: Ubuntu x64
 
+                .. code-block:: python
+
+                    YOUR_COPPELIASIM_PATH/programming/legacyRemoteApi/remoteApiBindings/lib/lib/YOUR_UBUNTU_VERSION
+
+                .. code-block:: python
+
+                    YOUR_COPPELIASIM_PATH/programming/legacyRemoteApi/remoteApiBindings/matlab/matlab
+
                 .. raw:: html
 
                     <video width="100%" height="auto" autoplay muted loop playsInline> <source
-                     src="../../_static/videos/add_path_remote_api.mp4"
+                     src="../../_static/videos/add_path_remote_api_ubuntu.mp4"
                      type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
                      Your browser does not support the video tag.  </video>
 
             .. tab-item:: Windows x64
+
+                .. code-block:: python
+
+                    C:/Program Files/CoppeliaRobotics/CoppeliaSimEdu/programming/legacyRemoteApi/remoteApiBindings/lib/lib/Windows
+
+                .. code-block:: python
+
+                    C:/Program Files/CoppeliaRobotics/CoppeliaSimEdu/programming/legacyRemoteApi/remoteApiBindings/matlab/matlab
 
                 .. raw:: html
 
