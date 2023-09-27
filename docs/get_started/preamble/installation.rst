@@ -39,17 +39,21 @@ Download and install CoppeliaSim EDU from this |link|_.
 
 .. note::
     Linux users only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
-    the file you must download is :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
-    can use the graphic interface or the terminal.
+    the file would seem to something like :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
+    can use the graphic interface or the terminal. The latter can be done as follows:
 
     .. code-block:: python
 
         tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
 
 
+.. note::
+   The DQ Robotics library uses the legacy remote API, which is available for Windows 64bits,
+   Ubuntu 64bits :file:`{` 16.04, 18.04, 20.04, 22.04 :file:`}` and MacOS 12 64bits (intel processors).
+
 .. warning::
    For MacOS and Matlab users: Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
-   However, the latter does not work with the legacy remote API, which is the one used by the DQ Robotics library.
+   However, the latter does not work with the legacy remote API.
 
 .. raw:: html
 
@@ -70,6 +74,12 @@ DQ Robotics
         .. warning::
            DQ Robotics for Matlab is distributed as a LGPLV3 licensed package. Matlab, however, is not free software and other third-party toolboxes may also not be free.
 
+        .. note::
+           The installation for Matlab has four steps:
+            #. Download the DQ Robotics.
+            #. Add the DQ Robotics to the path in Matlab.
+            #. Add the :file:`matlab folder` located in your CoppeliaSim to the path in Matlab.
+            #. Add the :file:`remoteApi` located in CoppeliaSim to the path in Matlab. The :file:`remoteApi`
 
         Clone the repository (you can use `Github Desktop <https://desktop.github.com/>`_ or `git commands <https://git-scm.com/>`_ ). Alternatively,
         you can download the zip file.
@@ -110,7 +120,7 @@ DQ Robotics
         |
 
 
-        Add to the path both the library and the :file:`remoteApi`. Usually, they are located in
+        Add to the path both the :file:`matlab folder` and the :file:`remoteApi`. Usually, they are located in
 
 
 
