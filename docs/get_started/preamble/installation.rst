@@ -45,7 +45,7 @@ Download and install CoppeliaSim EDU from this |link|_.
 
 .. warning::
    For MacOS and Matlab users: Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
-   However, that architecture must match to the version you installed of Matlab.
+   However, the latter does not work with the legacy remote API, which is the one used by the DQ Robotics library.
 
 .. raw:: html
 
