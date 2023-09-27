@@ -1,7 +1,7 @@
 .. _example-scene:
 
-Example scene
-=============
+One scene to rule them all
+==========================
 
 .. _umirobot: https://mmmarinho.github.io/UMIRobot/
 .. |umirobot| replace:: **UMIRobot**
@@ -19,6 +19,11 @@ Example scene
 During this tutorial we shall use the :file:`DQ_Robotics_lab.ttt` scene, which contain a several
 useful objects and robots. Most of the robots are already included in the simulator, but some of them were modified
 for this tutorial.
+
+This one scene enables examples of asynchronous and synchronous mode, kinematic and dynamic mode, and control strategies
+for robots commanded by joint positions, velocities, and torques.
+Don't worry if you don't know these concepts, they shall be explained in this tutorial.
+
 
 
 .. grid::

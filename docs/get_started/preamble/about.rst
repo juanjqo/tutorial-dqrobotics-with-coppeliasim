@@ -12,7 +12,7 @@ About this tutorial
     This is a warning box.
 
 
-This tutorial aims to teach the basic concepts about the DQ Robotics library and
-the CoppeliaSim simulator.
+This tutorial aims to teach how to use the DQ Robotics library with
+the CoppeliaSim simulator. Therefore, it's assumed th
 
 
