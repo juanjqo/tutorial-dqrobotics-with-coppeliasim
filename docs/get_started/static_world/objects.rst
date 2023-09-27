@@ -4,7 +4,7 @@ Interacting with objects
 
 
 .. _kinematic_mode: https://github.com/dqrobotics/matlab/issues/85
-.. |kinematic_mode| replace:: **kinematic model**
+.. |kinematic_mode| replace:: **kinematic mode**
 
 .. _discussions: https://github.com/orgs/dqrobotics/discussions/7
 .. |discussions| replace:: **discussions**
