@@ -16,6 +16,7 @@ It is time to run your first example!
 
     #. Test the installation of the DQ Robotics library.
     #. Get familiar with the class :file:`DQ_VrepInterface()`.
+    #. Know the method :file:`get_object_pose()`.
     #. Understand the asynchronous mode (default mode).
 
 Open the DQ_Robotics_lab.ttt scene (see :ref:`example-scene`). Suppose we want to get the position of object :file:`Frame_x` via code.
