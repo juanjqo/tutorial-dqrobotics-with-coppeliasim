@@ -8,6 +8,10 @@ Installation
 .. _environment: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv
 .. |environment| replace:: **environment**
 
+
+.. _sudo: https://ros2-tutorial.readthedocs.io/en/latest/preamble/ubuntu.html
+.. |sudo| replace:: **Ubuntu Terminal Basics**
+
 .. _repository: https://github.com/dqrobotics/matlab.git
 .. |repository| replace:: **repository**
 
@@ -156,11 +160,14 @@ DQ Robotics
                If you are unfamiliar with Python, check this |tutorial|_
                before installing the library.
 
-            .. warning::
-               It is a good practice to isolate your Python |environment|_.
+            .. danger::
+               You could break your system or create annoying conflicts by using :file:`sudo`. Check |sudo|_ to learn more.
+
+            .. tip::
+               It is a good practice to isolate your Python |environment|_ (i.e., using :file:`venv` to create virtual environments).
 
 
-            Open a terminal and run:
+            Open a terminal and run (using a virtual environment hopefully):
 
             .. code-block:: python
 
@@ -172,7 +179,8 @@ DQ Robotics
                 |pycharm| is an excellent multiplatform software to manage your Python scripts and your Python |environment|_.
                 The Community Edition is free and open source.
 
-            Example using PyCharm:
+            Check this video using Pycharm to install DQ Robotics in a virtual environment:
+
 
             .. raw:: html
 
@@ -185,6 +193,9 @@ DQ Robotics
     .. tab-item:: C++
 
             |ubuntu|
+
+            .. warning::
+                For this tutorial, the C++ version is recommended only for experienced users.
 
             Open a terminal and run:
 
