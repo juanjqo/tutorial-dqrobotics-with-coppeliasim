@@ -17,7 +17,7 @@ Get started
     Consider...
 
 .. admonition:: Git Example
-    :class: admonition-gitexample
+    :class: admonition-git
 
     Consider...
 

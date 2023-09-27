@@ -65,20 +65,20 @@ div.admonition.admonition-example  > .admonition-title {
 
 
 /*--------------Git Example------------------------------------------*/
-div.admonition.admonition-gitexample > .admonition-title:after {
+div.admonition.admonition-git > .admonition-title:after {
   content: "\f09b"; /* the fa-scale icon */
 }
-div.admonition.admonition-gitexample  {
+div.admonition.admonition-git {
   border-color: hsl(288, 100%, 50%);
 }
-div.admonition.admonition-gitexample  > .admonition-title:before {
+div.admonition.admonition-git > .admonition-title:before {
   background-color: hsl(288, 100%, 88%);  /* upper background*/
 }
-div.admonition.admonition-gitexample  > .admonition-title:after {
+div.admonition.admonition-git > .admonition-title:after {
   /*color: hsl(60, 100%, 25%); */
   color: hsl(288, 100%, 50%);  /* for the ICON*/
 }
-div.admonition.admonition-gitexample  > .admonition-title {
+div.admonition.admonition-git> .admonition-title {
   color: black; /* for the title font color*/
 }
 /*-------------------------------------------------------------------*/
