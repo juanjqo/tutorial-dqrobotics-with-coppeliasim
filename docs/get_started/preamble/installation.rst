@@ -2,6 +2,9 @@
 Installation
 =============
 
+.. _more-info: https://dqroboticsgithubio.readthedocs.io/en/latest/installation/python.html
+.. |more-info| replace:: **DQ Robotics documentation**
+
 .. _tutorial: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html
 .. |tutorial| replace:: **tutorial**
 
@@ -54,6 +57,15 @@ Download and install CoppeliaSim EDU from this |link|_.
 .. warning::
    For MacOS and Matlab users: Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
    However, the latter does not work with the legacy remote API.
+
+.. warning::
+   MacOS users could require additional steps to run a simulation.
+
+   #. Add :file:`simRemoteApi.start(19997)` to the main script of the scene.
+   #. Start the simulation.
+   #. Run your script.
+
+   Check the |more-info|_ for more details.
 
 .. raw:: html
 

@@ -19,3 +19,6 @@ html[data-theme="light"] {
 }
 
 
+div.admonition.admonition-goal > .admonition-title:after {
+  content: "\f11e"; /* the fa-scale icon */
+}

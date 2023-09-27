@@ -1,35 +1,31 @@
-Minimal example
-***************
-.. _more-info: https://dqroboticsgithubio.readthedocs.io/en/latest/installation/python.html
-.. |more-info| replace:: **DQ Robotics documentation**
-
+Minimal example: asynchronous mode
+**********************************
 
 .. _more-info2: https://www.coppeliarobotics.com/helpFiles/en/accessingSceneObjects.htm
 .. |more-info2| replace:: **Accessing scene objects programmatically**
-
-
-.. _synch: https://www.coppeliarobotics.com/helpFiles/en/remoteApiModusOperandi.htm
-.. |synch| replace:: **synchronous mode**
 
 
 .. _tutorial: https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html
 .. |tutorial| replace:: **tutorial**
 
 
-It is time to run your first example! The goal is to get the position of the object :file:`Frame_x`, which is located in the position :file:`[-1,0,0]`
-in the DQ_Robotics_lab.ttt scene.
+It is time to run your first example!
 
-.. warning::
-   MacOS users could require additional steps to run a simulation.
+.. admonition:: Goals
+    :class: admonition-goal
 
-   #. Add :file:`simRemoteApi.start(19997)` to the main script of the scene.
-   #. Start the simulation.
-   #. Run your script.
+    #. Test the installation of the DQ Robotics library.
+    #. Get familiar with the class :file:`DQ_VrepInterface()`.
+    #. Understand the asynchronous mode (default mode).
 
-   Check the |more-info|_ for more details.
+Open the DQ_Robotics_lab.ttt scene (see :ref:`example-scene`). Suppose we want to get the position of object :file:`Frame_x` via code.
+If you check the scene, you'll notice that is located in the position :file:`[-1,0,0]`. Therefore, we expect as result the
+pure quaternion :file:`-i`.
 
+For this example, we are going to use the :file:`asynchronous mode`. This is the default operation mode of CoppeliaSim.
+This mode means that the simulation on CoppeliaSim will advance without taking into account the progress of your script.
+Alternatively, CoppeliaSim supports the :file:`synchronous mode`. (see :ref:`synchronous mode`).
 
-Open the DQ_Robotics_lab.ttt scene (see :ref:`example-scene`).
 
 .. image:: /_static/basics/frame_x_sc.png
     :align: center
@@ -48,27 +44,26 @@ Open the DQ_Robotics_lab.ttt scene (see :ref:`example-scene`).
 To get the pose (position and orientation) of an object we need to use the method :file:`get_object_pose()` of the class
 :file:`DQ_VrepInterface()`.
 
-Roughly speaking, you need to do the following steps:
+Roughly speaking, in the default mode (asynchronous mode), you need to do the following steps:
 
-#. Define an object of the :file:`DQ_VrepInterface()` class.
+#. Instantiate an object of the :file:`DQ_VrepInterface()` class.
 #. Establish the connection to an specific IP and port. If you are running both the script and the simulation
    in the same computer, the default IP is :file:`127.0.0.1`. The default port is :file:`19997`.
 #. Start the simulation.
-#. Get the object pose.
+#. Do whatever you want to do. For instance, get the object pose.
 #. Stop the simulation.
 #. Disconnect.
 
 |
 
-Templates: asynchronous mode
-----------------------------
+Templates:
+----------
 
-The following templates are minimal scripts containing good practices for Matlab, Python, and C++. Those are based
-on hundreds of feedbacks provided by the Maintainers of the DQ Robotics.
+The following templates are minimal scripts with the :file:`DQ_VrepInterface()` class and contain good practices for Matlab, Python, and C++.
+Those are based on hundreds of feedbacks provided by the Maintainers of the DQ Robotics.
 
-The templates show how to establish communication with a CoppeliaSim scene using the default :file:`port`. It's assumed that both the script and
-the scene are running in the same computer (default :file:`IP`). Furthermore, the :file:`asynchronous mode` (default mode) is used.
-This latter means that the simulation on CoppeliaSim will advance without taking into account the progress of your script. Learn more in |synch|_.
+The templates show how to establish communication with a CoppeliaSim scene in :file:`asynchronous mode` (default mode) using the default :file:`port`. It's assumed that both the script and
+the scene are running in the same computer (default :file:`IP`).
 
 .. image:: /_static/basics/default_mode.png
 
@@ -165,6 +160,15 @@ Example
             :lines: 1-
 
 
+.. raw:: html
+
+    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+     src="../../_static/videos/hello_world_test.mp4"
+     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+     Your browser does not support the video tag.  </video>
+
+|
+
 You will have the following output:
 
 .. grid::
@@ -173,16 +177,6 @@ You will have the following output:
 
         | Position:   - 1i
         | The test was successful!
-
-
-|
-
-.. raw:: html
-
-    <video width="100%" height="auto" autoplay muted loop playsInline> <source
-     src="../../_static/videos/hello_world_test.mp4"
-     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
-     Your browser does not support the video tag.  </video>
 
 .. seealso::
     You can run the script and the simulation on different computers that are on the same local network.
