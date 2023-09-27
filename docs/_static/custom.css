@@ -66,7 +66,8 @@ div.admonition.admonition-example  > .admonition-title {
 
 /*--------------Git Example------------------------------------------*/
 div.admonition.admonition-git > .admonition-title:after {
-  content: "\f492"; /* \f09b */
+  font: var(--fa-font-brands);
+  content: "\f09b"; /* the fa-scale icon */
 }
 div.admonition.admonition-git {
   border-color: hsl(288, 100%, 50%);
