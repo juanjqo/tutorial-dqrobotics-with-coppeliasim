@@ -46,24 +46,7 @@ Cards
     .. grid-item-card:: A clickable card
         :link: https://example.com
 
-.. grid::
 
-    .. grid-item-card::
-
-        panel 1 header
-        ^^^^^^^^^^^^^^
-        panel 1 content
-        more content
-        ++++++++++++++
-        panel 1 footer
-
-    .. grid-item-card::
-
-        panel 2 header
-        ^^^^^^^^^^^^^^
-        panel 2 content
-        ++++++++++++++
-        panel 2 footer
 
 .. toctree::
    :hidden:

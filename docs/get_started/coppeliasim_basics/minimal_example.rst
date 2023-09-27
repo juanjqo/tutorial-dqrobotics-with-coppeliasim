@@ -1,5 +1,5 @@
-Hello world
-***********
+Minimal example
+***************
 .. _more-info: https://dqroboticsgithubio.readthedocs.io/en/latest/installation/python.html
 .. |more-info| replace:: **DQ Robotics documentation**
 
@@ -29,7 +29,7 @@ in the DQ_Robotics_lab.ttt scene.
    Check the |more-info|_ for more details.
 
 
-Open the DQ_Robotics_lab.ttt scene (see :ref:`download-scene`).
+Open the DQ_Robotics_lab.ttt scene (see :ref:`example-scene`).
 
 .. image:: /_static/basics/frame_x_sc.png
     :align: center

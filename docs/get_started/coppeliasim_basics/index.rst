@@ -17,5 +17,5 @@
    engines
    simulation_parameters
    ports
-   hello_world
+   minimal_example
    synchronous
