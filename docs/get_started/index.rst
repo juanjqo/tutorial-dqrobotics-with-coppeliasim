@@ -11,6 +11,16 @@ Get started
 
     Put a disclaimer here...
 
+.. admonition:: Example
+    :class: admonition-example
+
+    Consider...
+
+.. admonition:: Git Example
+    :class: admonition-gitexample
+
+    Consider...
+
 :bdg-primary:`primary`
 :bdg-secondary:`secondary`
 :bdg-success:`success`
