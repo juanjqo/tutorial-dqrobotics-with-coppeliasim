@@ -3,7 +3,7 @@
 
 
 
-.. admonition:: Disclaimer
+.. admonition:: Note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 

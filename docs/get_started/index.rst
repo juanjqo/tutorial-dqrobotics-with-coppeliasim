@@ -6,7 +6,10 @@ Get started
 .. note::
    This tutorial is focused on DQ Robotics for Matlab (master branch). However, some hints for Python and C++ are also included.
 
+.. admonition:: Disclaimer
+    :class: admonition-disclaimer
 
+    Put a disclaimer here...
 
 :bdg-primary:`primary`
 :bdg-secondary:`secondary`

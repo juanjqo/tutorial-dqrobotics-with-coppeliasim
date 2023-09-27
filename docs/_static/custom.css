@@ -22,3 +22,25 @@ html[data-theme="light"] {
 div.admonition.admonition-goal > .admonition-title:after {
   content: "\f11e"; /* the fa-scale icon */
 }
+
+
+/*--------------disclaimer------------------------------------------*/
+div.admonition.admonition-disclaimer > .admonition-title:after {
+  content: "\f06a"; /* the fa-scale icon */
+}
+div.admonition.admonition-disclaimer {
+  border-color: hsl(360, 100%, 57%);
+}
+div.admonition.admonition-disclaimer > .admonition-title:before {
+  background-color: hsl(12, 100%, 85%);  /* upper background*/
+}
+div.admonition.admonition-disclaimer > .admonition-title:after {
+  /*color: hsl(60, 100%, 25%); */
+  color: hsl(360, 100%, 57%);  /* for the ICON*/
+}
+div.admonition.admonition-disclaimer > .admonition-title {
+  color: black; /* for the title font color*/
+}
+/*-------------------------------------------------------------------*/
+
+
