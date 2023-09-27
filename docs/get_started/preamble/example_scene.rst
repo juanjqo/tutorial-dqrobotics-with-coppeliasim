@@ -39,7 +39,7 @@ _________
 
     .. grid-item-card::
 
-        |umirobot|_:
+        |umirobot|_
         ^^^^^^^^^^^
         .. image:: ../../_static/Notes.png
             :width: 200
