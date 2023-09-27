@@ -10,8 +10,8 @@ Knowing the user interface
 
 
 .. note::
-    If you are using a high resolution display and the user interface looks too small, you
-    could set the parameter :file:`highResDisplay=2` in the configuration file :file:`usrset.txt`.
+    If you are using a high-resolution display and the user interface looks too small, you
+    could fix it by setting the parameter :file:`highResDisplay=2` in the configuration file :file:`usrset.txt`.
 
     To know where the :file:`usrset.txt` is, you can type in the Lua commander the following:
 
