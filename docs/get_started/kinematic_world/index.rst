@@ -1,5 +1,5 @@
-**Static world**
-****************
+**Kinematic world**
+*******************
 
 .. admonition:: A sidebar admonition!
     :class: sidebar note

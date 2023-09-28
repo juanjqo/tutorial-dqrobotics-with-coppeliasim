@@ -2,7 +2,11 @@ Knowing the user interface
 **************************
 
 
+.. admonition:: Goals
+    :class: admonition-goal
 
+    #. Get familiar with CoppeliaSim.
+    #. Know the elements that compose the user interface.
 
 .. image:: /_static/basics/GUI_edited.png
     :align: center

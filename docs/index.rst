@@ -57,6 +57,11 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 .. warning::
    This project is unofficial and under active development.
 
+.. admonition:: Disclaimer
+    :class: admonition-disclaimer
+
+    This tutorial is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties
+    of merchantability, fitness for a particular purpose and noninfrigement.
 
 Contents
 --------
@@ -67,8 +72,11 @@ Contents
 #. :doc:`Fundamentals on CoppeliaSim <get_started/coppeliasim_basics/index>`
     Some basic topics about CoppeliaSim
 
-#. :doc:`Static world <get_started/static_world/index>`
+#. :doc:`Static world <get_started/kinematic_world/index>`
     Some topics on non-dynamic scenes
+
+#. :doc:`Dynamic world <get_started/dynamic_world/index>`
+    Some topics on dynamic scenes
 
 .. toctree::
    :hidden:

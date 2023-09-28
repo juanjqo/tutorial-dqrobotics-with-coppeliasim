@@ -3,13 +3,21 @@
 Get started
 ***********
 
+.. _dqrobotics: https://dqrobotics.github.io/
+.. |dqrobotics| replace:: **DQ Robotics**
+
+
 .. note::
-   This tutorial is focused on DQ Robotics for Matlab (master branch). However, some hints for Python and C++ are also included.
+   This tutorial is focused on |dqrobotics|_ for Matlab (master branch). However, some hints for Python and C++ are also included.
 
-.. admonition:: Disclaimer
-    :class: admonition-disclaimer
+.. warning::
+   The videos shown in this tutorial (and **this tutorial itself**) must be used as a **reference**. You could see different behaviors in your
+   implementations due to software updates, versions, operating systems, etc.
 
-    Put a disclaimer here...
+.. note::
+    This tutorial assumes that you know the basic concepts of dual quaternions and the basic operations in Matlab.
+    If this is not your case, we recommend taking this course first: https://github.com/dqrobotics/learning-dqrobotics-in-matlab.
+
 
 .. admonition:: Example
     :class: admonition-example
@@ -66,7 +74,8 @@ Cards
 
    preamble/index
    coppeliasim_basics/index
-   static_world/index
+   kinematic_world/index
+   dynamic_world/index
 
 
 

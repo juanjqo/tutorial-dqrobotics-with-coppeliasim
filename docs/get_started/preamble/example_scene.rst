@@ -12,17 +12,17 @@ One scene to rule them all
     .. image:: ../../_static/Notes.png
       :width: 200
 
-    You can create your own scene on CoppeliaSim but, you will need to adapt the
-    examples this tutorial provides.
+    You can create your own scene on CoppeliaSim but, you will need to make adaptations to
+    run the examples this tutorial provides.
 
 
-During this tutorial we shall use the :file:`DQ_Robotics_lab.ttt` scene, which contain a several
+During this tutorial we will use the :file:`DQ_Robotics_lab.ttt` scene, which contain a several
 useful objects and robots. Most of the robots are already included in the simulator, but some of them were modified
 for this tutorial.
 
 This one scene enables examples of asynchronous and synchronous mode, kinematic and dynamic mode, and control strategies
 for robots commanded by joint positions, velocities, and torques.
-Don't worry if you don't know these concepts, they shall be explained in this tutorial.
+Don't worry if you don't know these concepts, they will be explained in this tutorial.
 
 
 
