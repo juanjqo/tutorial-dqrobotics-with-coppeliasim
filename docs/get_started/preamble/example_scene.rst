@@ -46,7 +46,7 @@ _________
 
         |umirobot|_
         ^^^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_umi.png
             :width: 200
         ++++++++++++++
         5-DOF arm
@@ -55,7 +55,7 @@ _________
 
         Custom robot
         ^^^^^^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_customrobot.png
             :width: 200
         ++++++++++++++
         6-DOF
@@ -64,7 +64,7 @@ _________
 
         UR5 robot
         ^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_ur5.png
             :width: 200
         ++++++++++++++
         6-DOF
@@ -73,7 +73,7 @@ _________
 
         Pioneer 3DX
         ^^^^^^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_pio.png
             :width: 200
         ++++++++++++++
         Differential base
@@ -85,7 +85,7 @@ _________
 
         Reference frame
         ^^^^^^^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_yellowbox.png
             :width: 200
         ++++++++++++++
         Yellow box
@@ -94,7 +94,7 @@ _________
 
         Reference frame
         ^^^^^^^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_pinkbox.png
             :width: 200
         ++++++++++++++
         Pink box
@@ -103,7 +103,7 @@ _________
 
         FE Panda
         ^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_panda.png
             :width: 200
         ++++++++++++++
         7-DOF
@@ -112,7 +112,7 @@ _________
 
         Dynamic sphere
         ^^^^^^^^^^^^^^
-        .. image:: ../../_static/Notes.png
+        .. image:: ../../_static/basics/components_redball.png
             :width: 200
         ++++++++++++++
         Red ball
