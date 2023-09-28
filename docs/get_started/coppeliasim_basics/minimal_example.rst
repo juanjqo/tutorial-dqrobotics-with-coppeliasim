@@ -77,6 +77,7 @@ the scene are running in the same computer (default :file:`IP`).
         :download:`template.m </_static/codes/get_started/coppeliasim_basics/communication/template.m>`
 
         .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/template.m
+            :emphasize-lines: 15
             :linenos:
             :language: python
             :lines: 1-
@@ -88,6 +89,7 @@ the scene are running in the same computer (default :file:`IP`).
         :download:`template.py </_static/codes/get_started/coppeliasim_basics/communication/template.py>`
 
         .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/template.py
+            :emphasize-lines: 14
             :linenos:
             :language: python
             :lines: 1-
@@ -97,7 +99,7 @@ the scene are running in the same computer (default :file:`IP`).
         :download:`template.cpp </_static/codes/get_started/coppeliasim_basics/communication/template.cpp>`
 
         .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/template.cpp
-            :emphasize-lines: 12
+            :emphasize-lines: 13
             :linenos:
             :language: cpp
             :lines: 1-
