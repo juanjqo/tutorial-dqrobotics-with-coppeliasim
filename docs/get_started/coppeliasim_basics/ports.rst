@@ -36,7 +36,7 @@ This is the default content of file :file:`remoteApiConnections.txt`:
 The definition of a new port requires three entries, namely :file:`portIndex@_port`, :file:`portIndex@_debug`,
 and :file:`portIndex@_syncSimTrigger`. (Check the definition of the port :file:`19997` in lines :file:`12-14`).
 
-For instance, to enable another port, let says, port :file:`19998`, we need to add the following entries in :file:`remoteApiConnections.txt`:
+For instance, to enable the port :file:`19998`, we need to add the following entries in :file:`remoteApiConnections.txt`:
 
 .. code-block:: python
 
