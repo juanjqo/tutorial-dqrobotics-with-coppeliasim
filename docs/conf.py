@@ -34,7 +34,7 @@ extensions = [
     'sphinxcontrib.youtube',
     'sphinx_copybutton',
     #'sphinx_github_style',
-    '_ext.mybashlexer',
+    #'_ext.mybashlexer',
 ]
 
 
