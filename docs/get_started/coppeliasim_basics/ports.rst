@@ -1,9 +1,16 @@
 Enabling ports
 **************
 
-CoppeliaSim has the port :file:`19997` enabled by default to start the remote API server. However, you can enable
-more ports according to your requirements. The ports are defined in :file:`remoteApiConnections.txt`, which is located
-in your CoppeliaSim installation.
+In some applications, it is advantageous to access the same scene using different scripts. You can do it by enabling more
+ports.
+
+.. image:: /_static/basics/ports.png
+    :align: center
+
+|
+
+CoppeliaSim has the port :file:`19997` enabled by default to start the remote API server. The ports are
+defined in :file:`remoteApiConnections.txt`, which is located in your CoppeliaSim installation.
 
 This is the default content of file :file:`remoteApiConnections.txt`:
 
@@ -26,12 +33,10 @@ This is the default content of file :file:`remoteApiConnections.txt`:
     portIndex1_debug            = false
     portIndex1_syncSimTrigger   = true
 
-The definition of a new port requires three entries, namely :file:`portIndex1_port`, :file:`portIndex1_debug`,
-and :file:`portIndex1_syncSimTrigger`. (Check the definition of the port :file:`19997` in lines :file:`12-14`).
+The definition of a new port requires three entries, namely :file:`portIndex@_port`, :file:`portIndex@_debug`,
+and :file:`portIndex@_syncSimTrigger`. (Check the definition of the port :file:`19997` in lines :file:`12-14`).
 
-For instance, to enable another port, let says, port :file:`19998`, we need to add the following entries in
-
-:file:`remoteApiConnections.txt`:
+For instance, to enable another port, let says, port :file:`19998`, we need to add the following entries in :file:`remoteApiConnections.txt`:
 
 .. code-block:: python
 
@@ -39,7 +44,9 @@ For instance, to enable another port, let says, port :file:`19998`, we need to a
     portIndex2_debug            = false
     portIndex2_syncSimTrigger   = true
 
-The final :file:`remoteApiConnections.txt`:
+
+
+The final :file:`remoteApiConnections.txt` should look like this:
 
 .. code-block:: python
     :emphasize-lines: 15,16,17
