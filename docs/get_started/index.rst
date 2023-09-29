@@ -32,6 +32,12 @@ Get started
    The videos shown in this tutorial (and **this tutorial itself**) must be used as a **reference**. You could see different behaviors in your
    implementations due to software updates, versions, operating systems, etc.
 
+.. admonition:: Issues
+   :class: admonition-bug
+
+   If you find bugs/typos or have any issues, please let us know.
+   https://github.com/juanjqo/tutorial-dqrobotics-with-coppeliasim/issues
+
 **About this tutorial**
 
 This tutorial is brought to you by |juanjqo|_. The examples are implemented mainly on Ubuntu 20.04 64bits and
