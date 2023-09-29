@@ -40,14 +40,43 @@ CoppeliaSim
 
 Download and install CoppeliaSim EDU from this |link|_.
 
-.. note::
-    Linux users only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
-    the file would seem to something like :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
-    can use the graphic interface or the terminal. The latter can be done as follows:
 
-    .. code-block:: python
+On Ubuntu, you only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
+the file would seem to something like :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
+can use the graphic interface or the terminal. The latter can be done as follows:
 
-        tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
+.. admonition:: Learn more about the terminal in Ubuntu
+    :class: admonition-example
+
+    https://ros2-tutorial.readthedocs.io/en/latest/preamble/ubuntu.html
+
+Open a new terminal (:kbd:`CTRL+ALT+T`) and type
+
+.. code-block:: python
+
+    cd ~/Downloads/
+    tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
+
+Finally, you can open CoppeliaSim:
+
+.. code-block:: python
+
+    ~/Downloads/CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu20_04/coppeliaSim.sh
+
+
+.. hint::
+   You can create an alias to CoppeliaSim. For instance:
+
+   Run this (**Do this only once**):
+
+   .. code-block:: python
+
+        echo "alias coppeliasim='~/Downloads/CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu20_04/coppeliaSim.sh &'" >> ~/.bashrc
+        source ~/.bashrc
+
+
+   Now, you can type :file:`coppeliasim` in your terminal to open CoppeliaSim!
+
 
 
 .. note::
