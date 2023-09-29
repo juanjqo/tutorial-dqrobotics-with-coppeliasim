@@ -24,7 +24,7 @@ Get started
 This tutorial is brought to you by |juanjqo|_. The examples are implemented mainly on Ubuntu 20.04 64bits and
 Windows 11 using Matlab 2023a, and CoppeliaSim 4.5.1.
 
-The capybara's  drawings were designed by Camila Quiroz.
+The capybara's drawings were designed by Camila Quiroz.
 
 .. warning::
     This tutorial assumes that you know the basic concepts about dual quaternions and the basic operations in Matlab.
