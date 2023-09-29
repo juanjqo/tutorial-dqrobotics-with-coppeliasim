@@ -17,6 +17,7 @@ Get started
 
 
 
+
 .. note::
    This tutorial is focused on |dqrobotics|_ for Matlab (master branch). However, some hints for Python and C++ are also included.
 
@@ -80,9 +81,9 @@ Contents
      type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
      Your browser does not support the video tag.  </video>
 
-.. [#] Adorno, B.V., 2017. Robot Kinematic Modeling and Control Based on Dual Quaternion Algebra---Part I: Fundamentals..
-.. [#] Adorno, B.V., 2011. Two-arm manipulation: From manipulators to enhanced human-robot collaboration (Doctoral dissertation).
-.. [#] Marinho, M.M., Adorno, B.V., Harada, K. and Mitsuishi, M., 2019. Dynamic active constraints for surgical robots using vector-field inequalities. IEEE Transactions on Robotics, 35(5), pp.1166-1185.
+.. [#] Adorno, B.V., 2017. Robot Kinematic Modeling and Control Based on Dual Quaternion Algebra---Part I: Fundamentals `(link) <https://hal.science/hal-01478225/>`_.
+.. [#] Adorno, B.V., 2011. Two-arm manipulation: From manipulators to enhanced human-robot collaboration (Doctoral dissertation) `(link) <https://theses.hal.science/tel-00641678/>`_.
+.. [#] Marinho, M.M., Adorno, B.V., Harada, K. and Mitsuishi, M., 2019. Dynamic active constraints for surgical robots using vector-field inequalities. IEEE Transactions on Robotics, 35(5), pp.1166-1185 `(link) <https://arxiv.org/pdf/1804.11270>`_.
 
 
 * **About** |dqrobotics|_
@@ -97,7 +98,7 @@ dual quaternion algebra.
 
 .. rubric::
 
-.. [#] Adorno, B.V and Marinho, M.M., "DQ Robotics: A Library for Robot Modeling and Control," in IEEE Robotics & Automation Magazine, vol. 28, no. 3, pp. 102-116.
+.. [#] Adorno, B.V and Marinho, M.M., "DQ Robotics: A Library for Robot Modeling and Control," in IEEE Robotics & Automation Magazine, vol. 28, no. 3, pp. 102-116 `(link) <https://arxiv.org/abs/1910.11612>`_.
 
 
 .. toctree::
