@@ -212,7 +212,8 @@ DQ Robotics
                before installing the library.
 
             .. danger::
-               You could break your system or create annoying conflicts by using :file:`sudo`. Check |sudo|_ to learn more.
+               You could break your system or create annoying conflicts by using :file:`sudo` to install Python packages.
+               Check |sudo|_ to learn more.
 
             .. tip::
                It is a good practice to isolate your Python |environment|_ (i.e., using :file:`venv` to create virtual environments).
