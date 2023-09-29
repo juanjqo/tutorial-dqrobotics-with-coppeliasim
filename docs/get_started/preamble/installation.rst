@@ -57,7 +57,7 @@ Open a new terminal (:kbd:`CTRL+ALT+T`) and type
     cd ~/Downloads/
     tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
 
-Finally, you can open CoppeliaSim:
+You can open CoppeliaSim by typing:
 
 .. code-block:: python
 
