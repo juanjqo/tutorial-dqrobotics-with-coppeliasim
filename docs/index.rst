@@ -48,8 +48,30 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
    type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
    Your browser does not support the video tag.  </video>
    
+|
 
-            
+.. grid::
+
+    .. grid-item-card:: Master the DQ Robotics library with CoppeliaSim!
+
+        Learn the basic concepts of CoppeliaSim with your favorite library for
+        dual quaternion algebra.
+
+    .. grid-item-card:: Use your favorite language!
+
+        Focused for Matlab. However, a lot of examples for Python and C++
+        are also provided.
+
+    .. grid-item-card:: Multiplatform
+
+        Although is mainly oriented to Ubuntu LTS, there are instructions for
+        Windows and macOS users.
+
+
+
+
+
+
 .. note::
    If you’re looking for the DQ Robotics documentation, this is **NOT** it. For the DQ Robotics documentation,
    refer to this `link <https://dqroboticsgithubio.readthedocs.io/en/latest/>`_.
@@ -63,20 +85,7 @@ Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
     This tutorial is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties
     of merchantability, fitness for a particular purpose and noninfrigement.
 
-Contents
---------
 
-#. :doc:`Preamble <get_started/preamble/index>`
-    Install DQ Robotics and CoppeliaSim.
-
-#. :doc:`Fundamentals on CoppeliaSim <get_started/coppeliasim_basics/index>`
-    Some basic topics about CoppeliaSim
-
-#. :doc:`Static world <get_started/kinematic_world/index>`
-    Some topics on non-dynamic scenes
-
-#. :doc:`Dynamic world <get_started/dynamic_world/index>`
-    Some topics on dynamic scenes
 
 .. toctree::
    :hidden:
