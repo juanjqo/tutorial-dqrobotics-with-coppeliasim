@@ -10,6 +10,9 @@ About this tutorial
 .. _book: https://hal.science/hal-01478225v1
 .. |book| replace:: **book**
 
+
+This tutorial is not meant to
+
 .. note::
    This tutorial is focused on |dqrobotics|_ for Matlab (master branch). However, some hints for Python and C++ are also included.
 

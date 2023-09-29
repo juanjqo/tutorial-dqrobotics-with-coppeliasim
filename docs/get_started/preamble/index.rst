@@ -7,8 +7,6 @@ this tutorial.
 
 |
 
-#. :doc:`About this tutorial <about>`
-
 #. :doc:`Installation <installation>`
 
 #. :doc:`One scene to rule them all <example_scene>`
@@ -19,7 +17,6 @@ this tutorial.
 .. toctree::
    :hidden:
 
-   about
    installation
    example_scene
 
