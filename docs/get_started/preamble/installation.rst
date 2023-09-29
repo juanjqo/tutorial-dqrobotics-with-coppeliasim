@@ -246,7 +246,7 @@ DQ Robotics
             |ubuntu|
 
             .. warning::
-                For this tutorial, the C++ version is recommended only for experienced users.
+                The C++ version is recommended only for experienced users.
 
             Open a terminal and run:
 
