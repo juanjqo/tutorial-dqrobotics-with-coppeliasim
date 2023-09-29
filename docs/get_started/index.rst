@@ -15,16 +15,10 @@ Get started
 .. _dq: https://hal.science/hal-01478225v1
 .. |dq| replace:: **Dual Quaternions**
 
+
+
 .. note::
    This tutorial is focused on |dqrobotics|_ for Matlab (master branch). However, some hints for Python and C++ are also included.
-
-
-**About this tutorial**
-
-This tutorial is brought to you by |juanjqo|_. The examples are implemented mainly on Ubuntu 20.04 64bits and
-Windows 11 using Matlab 2023a, and CoppeliaSim 4.5.1.
-
-The capybara's drawings were designed by Camila Quiroz.
 
 .. warning::
     This tutorial assumes that you know the basic concepts about dual quaternions and the basic operations in Matlab.
@@ -37,31 +31,20 @@ The capybara's drawings were designed by Camila Quiroz.
    The videos shown in this tutorial (and **this tutorial itself**) must be used as a **reference**. You could see different behaviors in your
    implementations due to software updates, versions, operating systems, etc.
 
+**About this tutorial**
 
-**About** |dq|_
+This tutorial is brought to you by |juanjqo|_. The examples are implemented mainly on Ubuntu 20.04 64bits and
+Windows 11 using Matlab 2023a, and CoppeliaSim 4.5.1.
 
-Dual quaternions can be seen as an extension of complex numbers.
+**Contributors**
 
-.. raw:: html
+|
 
-    <video width="100%" height="auto" autoplay muted loop playsInline> <source
-     src="../_static/videos/dqrobotics_animation.mp4"
-     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
-     Your browser does not support the video tag.  </video>
+**Acknowledgments**
 
+* Camila Andrea Quiroz Omaña for the capybara's drawings.
 
-**About** |dqrobotics|_
-
-DQ Robotics is a standalone open-source and multiplatform library for robot modelling and control based on
-dual quaternion algebra.
-
-.. admonition:: YouTube: DQ Robotics
-    :class: admonition-youtube
-
-    ..  youtube:: e8ajS3FVMUI
-
-
-
+|
 
 Contents
 --------
@@ -82,7 +65,39 @@ Contents
     Some topics on dynamic scenes
 
 
+|
+|
 
+.. rubric:: Recommended References
+
+* **About** |dq|_
+
+
+.. raw:: html
+
+    <video width="100%" height="auto" autoplay muted loop playsInline> <source
+     src="../_static/videos/dqrobotics_animation.mp4"
+     type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+     Your browser does not support the video tag.  </video>
+
+.. [#] Adorno, B.V., 2017. Robot Kinematic Modeling and Control Based on Dual Quaternion Algebra---Part I: Fundamentals..
+.. [#] Adorno, B.V., 2011. Two-arm manipulation: From manipulators to enhanced human-robot collaboration (Doctoral dissertation).
+.. [#] Marinho, M.M., Adorno, B.V., Harada, K. and Mitsuishi, M., 2019. Dynamic active constraints for surgical robots using vector-field inequalities. IEEE Transactions on Robotics, 35(5), pp.1166-1185.
+
+
+* **About** |dqrobotics|_
+
+DQ Robotics is a standalone open-source and multiplatform library for robot modelling and control based on
+dual quaternion algebra.
+
+.. admonition:: YouTube: DQ Robotics
+    :class: admonition-youtube
+
+    ..  youtube:: e8ajS3FVMUI
+
+.. rubric::
+
+.. [#] Adorno, B.V and Marinho, M.M., "DQ Robotics: A Library for Robot Modeling and Control," in IEEE Robotics & Automation Magazine, vol. 28, no. 3, pp. 102-116.
 
 
 .. toctree::
