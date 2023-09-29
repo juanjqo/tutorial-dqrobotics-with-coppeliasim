@@ -70,6 +70,9 @@ The final :file:`remoteApiConnections.txt` should look like this:
     portIndex2_syncSimTrigger   = true
 
 
+.. note::
+   You'll need restart CoppeliaSim for the :file:`remoteApiConnections.txt` modifications to take effect.
+
 .. admonition:: See also
     :class: admonition-git
 
