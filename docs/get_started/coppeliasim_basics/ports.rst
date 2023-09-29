@@ -71,7 +71,7 @@ The final :file:`remoteApiConnections.txt` should look like this:
 
 
 .. note::
-   You'll need restart CoppeliaSim for the :file:`remoteApiConnections.txt` modifications to take effect.
+   You'll need to restart CoppeliaSim for the :file:`remoteApiConnections.txt` modifications to take effect.
 
 .. admonition:: See also
     :class: admonition-git
