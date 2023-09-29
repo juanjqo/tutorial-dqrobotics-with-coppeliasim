@@ -84,7 +84,7 @@ You can open CoppeliaSim by typing:
    Ubuntu 64bits :file:`{` 16.04, 18.04, 20.04, 22.04 :file:`}` and MacOS 12 64bits (intel processors).
 
 .. warning::
-   For MacOS and Matlab users: Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
+   Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
    However, the latter does not work with the legacy remote API.
 
 .. warning::
