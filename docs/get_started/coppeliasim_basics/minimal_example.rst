@@ -97,7 +97,6 @@ the scene are running in the same computer (default :file:`IP`).
         :download:`template.cpp </_static/codes/get_started/coppeliasim_basics/communication/template.cpp>`
 
         .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/template.cpp
-            :emphasize-lines: 12
             :linenos:
             :language: cpp
             :lines: 1-
