@@ -83,3 +83,24 @@ div.admonition.admonition-git> .admonition-title {
   color: black; /* for the title font color*/
 }
 /*-------------------------------------------------------------------*/
+
+
+/*--------------Git Example------------------------------------------*/
+div.admonition.admonition-bug > .admonition-title:after {
+  font: var(--fa-font-solid);
+  content: "\f188"; /* the fa-scale icon */
+}
+div.admonition.admonition-bug {
+  border-color: hsl(31, 100%, 50%);
+}
+div.admonition.admonition-bug > .admonition-title:before {
+  background-color: hsl(31, 100%, 88%);  /* upper background*/
+}
+div.admonition.admonition-bug > .admonition-title:after {
+  /*color: hsl(60, 100%, 25%); */
+  color: hsl(31, 100%, 50%);  /* for the ICON*/
+}
+div.admonition.admonition-bug> .admonition-title {
+  color: black; /* for the title font color*/
+}
+/*-------------------------------------------------------------------*/

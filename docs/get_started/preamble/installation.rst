@@ -40,14 +40,43 @@ CoppeliaSim
 
 Download and install CoppeliaSim EDU from this |link|_.
 
-.. note::
-    Linux users only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
-    the file would seem to something like :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
-    can use the graphic interface or the terminal. The latter can be done as follows:
 
-    .. code-block:: python
+On Ubuntu, you only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
+the file would seem to something like :file:`CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz`. To extract it, you
+can use the graphic interface or the terminal. The latter can be done as follows:
 
-        tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
+.. admonition:: Learn more about the terminal in Ubuntu
+    :class: admonition-example
+
+    https://ros2-tutorial.readthedocs.io/en/latest/preamble/ubuntu.html
+
+Open a new terminal (:kbd:`CTRL+ALT+T`) and type
+
+.. code-block:: python
+
+    cd ~/Downloads/
+    tar -xf CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz
+
+You can open CoppeliaSim by typing:
+
+.. code-block:: python
+
+    ~/Downloads/CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu20_04/coppeliaSim.sh
+
+
+.. hint::
+   You can create an alias to CoppeliaSim. For instance:
+
+   Run this (**Do this only once**):
+
+   .. code-block:: python
+
+        echo "alias coppeliasim='~/Downloads/CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu20_04/coppeliaSim.sh &'" >> ~/.bashrc
+        source ~/.bashrc
+
+
+   Now, you can type :file:`coppeliasim` in your terminal to open CoppeliaSim!
+
 
 
 .. note::
@@ -55,7 +84,7 @@ Download and install CoppeliaSim EDU from this |link|_.
    Ubuntu 64bits :file:`{` 16.04, 18.04, 20.04, 22.04 :file:`}` and MacOS 12 64bits (intel processors).
 
 .. warning::
-   For MacOS and Matlab users: Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
+   Apple Silicon macs have the option to download CoppeliaSim :file:`x86_64` and :file:`arm64`.
    However, the latter does not work with the legacy remote API.
 
 .. warning::
@@ -183,7 +212,8 @@ DQ Robotics
                before installing the library.
 
             .. danger::
-               You could break your system or create annoying conflicts by using :file:`sudo`. Check |sudo|_ to learn more.
+               You could break your system or create annoying conflicts by using :file:`sudo` to install Python packages.
+               Check |sudo|_ to learn more.
 
             .. tip::
                It is a good practice to isolate your Python |environment|_ (i.e., using :file:`venv` to create virtual environments).
@@ -217,7 +247,7 @@ DQ Robotics
             |ubuntu|
 
             .. warning::
-                For this tutorial, the C++ version is recommended only for experienced users.
+                The C++ version is recommended only for experienced users.
 
             Open a terminal and run:
 

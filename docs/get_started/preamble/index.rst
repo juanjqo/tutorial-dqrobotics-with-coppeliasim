@@ -2,26 +2,21 @@
 ************
 
 
+This section shows how to install the DQ Robotics library, CoppeliaSim, and introduces the custom scene used in
+this tutorial.
 
-.. admonition:: Note
+|
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+#. :doc:`Installation <installation>`
 
-
-
-This tutorial aims to provide a zero-to-hero course in DQ Robotics with CoppeliaSim.
+#. :doc:`One scene to rule them all <example_scene>`
 
 
-.. admonition:: YouTube: DQ Robotics
-    :class: dropdown admonition-youtube
-
-    ..  youtube:: e8ajS3FVMUI
 
 
 .. toctree::
    :hidden:
 
-   about
    installation
    example_scene
 

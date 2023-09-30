@@ -33,8 +33,6 @@ extensions = [
     'sphinx_togglebutton',
     'sphinxcontrib.youtube',
     'sphinx_copybutton',
-    #'sphinx_github_style',
-    '_ext.mybashlexer',
 ]
 
 
