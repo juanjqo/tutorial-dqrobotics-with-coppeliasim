@@ -24,7 +24,7 @@ synchronous mode (now called stepped mode).  In this mode, the simulation will t
 To enable it, you need to use :file:`set_synchronous(true)`.
 
 Once enabled, the simulation will wait for a trigger to start computing the next simulation step. Such a trigger is sent by the
-method :file:`trigger_next_simulation_step()`. To ensure synchrony, we need to ensure that the simulation step is finished before sending the next trigger.
+method :file:`trigger_next_simulation_step()`. To keep the synchrony, we need to ensure that the simulation step is finished before sending the next trigger.
 This can be done by using the method :file:`wait_for_simulation_step_to_end()`.
 
 
