@@ -6,21 +6,22 @@ vi = DQ_VrepInterface()
 
 
 def main() -> None:
+    vi = DQ_VrepInterface()
     try:
-        vi.connect("127.0.0.1", 19997, 100, 10)
+        if not vi.connect("127.0.0.1", 19997, 100, 10):
+            raise RuntimeError("Unable to connect to CoppeliaSim.")
+
         vi.start_simulation()
         time.sleep(0.1)
-        #---------------------------------------------------------
-        # Your code here
-        #---------------------------------------------------------
-        vi.stop_simulation()
-        vi.disconnect()
+        # --------------Your code here----------------------------
 
-    except KeyboardInterrupt:
+        # ---------------------------------------------------------
+
+    except (Exception, KeyboardInterrupt) as e:
+        print(e)
         pass
 
-    except Exception as e:
-        print(e)
+    finally:
         vi.stop_simulation()
         vi.disconnect()
 

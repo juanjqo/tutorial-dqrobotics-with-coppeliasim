@@ -9,10 +9,9 @@ vi = DQ_VrepInterface();
 try
     vi.connect('127.0.0.1', 19997);
     vi.start_simulation();
-    vi.set
     pause(0.1);
-    %----------------------------------------------
-    % Your code here
+    %-----------Your code here-------------------
+
     %----------------------------------------------
     vi.stop_simulation();
     vi.disconnect();
