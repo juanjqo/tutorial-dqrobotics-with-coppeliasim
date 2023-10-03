@@ -147,7 +147,7 @@ Example
         :download:`communication_test.py </_static/codes/get_started/coppeliasim_basics/communication/communication_test.py>`
 
         .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/communication_test.py
-            :emphasize-lines: 13
+            :emphasize-lines: 16
             :linenos:
             :language: python
             :lines: 1-
@@ -157,7 +157,7 @@ Example
         :download:`communication_test.cpp </_static/codes/get_started/coppeliasim_basics/communication/communication_test.cpp>`
 
         .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/communication_test.cpp
-            :emphasize-lines: 12
+            :emphasize-lines: 13
             :linenos:
             :language: cpp
             :lines: 1-

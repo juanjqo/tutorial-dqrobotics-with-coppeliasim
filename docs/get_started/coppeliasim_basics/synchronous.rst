@@ -18,6 +18,17 @@ Minimal example: synchronous mode
        * :file:`trigger_next_simulation_step()`.
        * :file:`wait_for_simulation_step_to_end()`.
 
+
+We learned previously the asynchronous mode, the default operation mode. In this section we are going to see the
+synchronous mode (now called stepped mode).  In this mode, the simulation will take into account the progress of your script.
+To enable it, you need to use :file:`set_synchronous(true)`.
+
+Once enabled, the simulation will wait for a trigger to start computing the next simulation step. Such a trigger is sent by the
+method :file:`trigger_next_simulation_step()`. To ensure synchrony, we need to ensure that the simulation step is finished before sending the next trigger.
+This can be done by using the method :file:`wait_for_simulation_step_to_end()`.
+
+
+
 Learn more in |synch|_.
 
 
@@ -25,7 +36,7 @@ Learn more in |synch|_.
 Templates:
 ----------
 
-The templates show how to establish communication with a CoppeliaSim scene in :file:`synchronous mode` (default mode) using the default :file:`port`. It's assumed that both the script and
+The templates show how to establish communication with a CoppeliaSim scene in :file:`synchronous mode` using the default :file:`port`. It's assumed that both the script and
 the scene are running in the same computer (default :file:`IP`).
 
 .. tab-set::
@@ -39,7 +50,7 @@ the scene are running in the same computer (default :file:`IP`).
             :linenos:
             :language: python
             :lines: 1-
-            :emphasize-lines: 11, 16,18
+            :emphasize-lines: 11, 15,16
 
 
     .. tab-item:: Python
@@ -51,7 +62,7 @@ the scene are running in the same computer (default :file:`IP`).
             :linenos:
             :language: python
             :lines: 1-
-            :emphasize-lines: 11,15,17
+            :emphasize-lines: 12,16,17
 
     .. tab-item:: C++
 
@@ -61,16 +72,80 @@ the scene are running in the same computer (default :file:`IP`).
             :linenos:
             :language: cpp
             :lines: 1-
-            :emphasize-lines: 10,14,16
+            :emphasize-lines: 11,15,16
 
 
 
 Free fall experiment
 ____________________
 
+|
+
 .. sidebar:: Hint
 
     .. image:: /_static/newton.png
 
-    Use **try/catch** statements to handle different types of errors. If an exception is thrown, stop and close the communication
-    in the catch statements.
+    The expected height :math:`y(t)` of the red ball is computed as :math:`y(t) = y_{0} + v_{0}t + (1/2)gt^2`, where
+    :math:`y_{0}`, :math:`v_{0}`, :math:`g`, :math:`t` are the initial height, the initial velocity, the gravity,
+    and the elapsed simulation time, respectively.
+
+It's time to test the synchronous mode! To do so, we are going to compare the height of the red ball (:file:`/Sphere`)
+that is in free fall with the expected height after 0.25 s in the simulation time. The dynamics of the red ball is
+handled by the engine and its behavior is affected by the simulation time step and the gravity.
+
+In the DQ_Robotics_lab.ttt scene (see :ref:`example-scene`), the engine is Newton, the simulation time step is :file:`50ms` and the gravity
+is :file:`-9,81`.  You can modify those parameters, but you'll need to update the examples as well.
+
+.. note::
+
+   As reported in https://github.com/dqrobotics/python/pull/51 the synchronous mode is working properly on Ubuntu
+   (Matlab, Python and C++) and on Windows (Matlab). Other combinations of OS and languages could not ensure the synchrony.
+
+|
+
+
+.. tab-set::
+
+    .. tab-item:: Matlab
+
+
+        :download:`free_fall_test.m </_static/codes/get_started/coppeliasim_basics/communication/free_fall_test.m>`
+
+        .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/free_fall_test.m
+            :linenos:
+            :language: python
+            :lines: 1-
+
+
+    .. tab-item:: Python
+
+
+        :download:`free_fall_test.py </_static/codes/get_started/coppeliasim_basics/communication/free_fall_test.py>`
+
+        .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/free_fall_test.py
+            :linenos:
+            :language: python
+            :lines: 1-
+
+    .. tab-item:: C++
+
+        :download:`free_fall_test.cpp </_static/codes/get_started/coppeliasim_basics/communication/free_fall_test.cpp>`
+
+        .. literalinclude:: /_static/codes/get_started/coppeliasim_basics/communication/free_fall_test.cpp
+            :linenos:
+            :language: cpp
+            :lines: 1-
+
+|
+
+You will have the following output:
+
+.. grid::
+
+    .. grid-item-card::
+
+        | ---------------------------------
+        | Initial height: 1
+        | ---------------------------------
+        | Elapsed time: 0.25
+        | Estimated height: 0.69344 Measured height: 0.68731

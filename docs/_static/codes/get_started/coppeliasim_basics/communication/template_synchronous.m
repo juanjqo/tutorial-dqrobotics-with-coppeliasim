@@ -13,8 +13,8 @@ try
     pause(0.1);
     %-----------Your code here---------------------
     vi.trigger_next_simulation_step();
-    %----------------------------------------------
     vi.wait_for_simulation_step_to_end();
+    %----------------------------------------------
     vi.stop_simulation();
     vi.disconnect();
 catch ME
