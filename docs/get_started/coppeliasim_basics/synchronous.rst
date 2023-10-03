@@ -5,7 +5,7 @@ Minimal example: synchronous mode
 
 
 .. _synch: https://www.coppeliarobotics.com/helpFiles/en/remoteApiModusOperandi.htm
-.. |synch| replace:: **synchronous mode**
+.. |synch| replace:: **Legacy remote API modus operandi**
 
 
 .. admonition:: Goals
@@ -28,8 +28,10 @@ method :file:`trigger_next_simulation_step()`. To keep the synchrony, we need to
 This can be done by using the method :file:`wait_for_simulation_step_to_end()`.
 
 
+.. admonition:: Recommendation
+    :class: admonition-example
 
-Learn more in |synch|_.
+    Check |synch|_ to learn more about the synchronous mode.
 
 
 
@@ -73,6 +75,41 @@ the scene are running in the same computer (default :file:`IP`).
             :language: cpp
             :lines: 1-
             :emphasize-lines: 11,15,16
+
+
+    .. tab-item:: CMake
+
+        .. admonition:: See also
+            :class: admonition-git
+
+            CMake examples for Ubuntu, Windows and MacOS https://github.com/dqrobotics/cpp-examples/blob/master/cmake/dqrobotics_dependencies.cmake
+
+        .. code-block:: cmake
+            :linenos:
+
+            # Example CMAKE project for Ubuntu
+            make_minimum_required(VERSION 3.5)
+
+            project(template_synchronous)
+
+            set(CMAKE_CXX_STANDARD 11)
+
+            FIND_PACKAGE(Threads REQUIRED)
+            FIND_PACKAGE(Eigen3 REQUIRED)
+            INCLUDE_DIRECTORIES(${EIGEN3_INCLUDE_DIR})
+            ADD_COMPILE_OPTIONS(-Werror=return-type
+                                -Wall -Wextra -Wmissing-declarations
+                                -Wredundant-decls -Woverloaded-virtual)
+
+            add_executable(${PROJECT_NAME}
+                           ${PROJECT_NAME}.cpp)
+
+            target_link_libraries(${PROJECT_NAME}
+                                  dqrobotics
+                                  dqrobotics-interface-vrep
+                                  Threads::Threads)
+
+
 
 
 
@@ -136,6 +173,7 @@ is :file:`-9,81`.  You can modify those parameters, but you'll need to update th
             :language: cpp
             :lines: 1-
 
+
 |
 
 You will have the following output:
@@ -149,3 +187,9 @@ You will have the following output:
         | ---------------------------------
         | Elapsed time: 0.25
         | Estimated height: 0.69344 Measured height: 0.68731
+
+
+.. admonition:: See also
+    :class: admonition-git
+
+    Synchronous test https://github.com/dqrobotics/python-examples/tree/master/vrep_interface_tests/synchronous_test

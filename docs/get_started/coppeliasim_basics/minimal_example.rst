@@ -49,7 +49,7 @@ Roughly speaking, in the default mode (asynchronous mode), you need to do the fo
 
 #. Instantiate an object of the :file:`DQ_VrepInterface()` class.
 #. Establish the connection to an specific IP and port. If you are running both the script and the simulation
-   in the same computer, the default IP is :file:`127.0.0.1`. The default port is :file:`19997`.
+   in the same computer, the default IP is :file:`127.0.0.1` and the default port is :file:`19997`.
 #. Start the simulation.
 #. Do whatever you want to do. For instance, get the object pose.
 #. Stop the simulation.
@@ -104,6 +104,39 @@ the scene are running in the same computer (default :file:`IP`).
             :language: cpp
             :lines: 1-
 
+
+
+    .. tab-item:: CMake
+
+        .. admonition:: See also
+            :class: admonition-git
+
+            CMake examples for Ubuntu, Windows and MacOS https://github.com/dqrobotics/cpp-examples/blob/master/cmake/dqrobotics_dependencies.cmake
+
+        .. code-block:: cmake
+                    :linenos:
+
+                    # Example CMAKE project for Ubuntu
+                    make_minimum_required(VERSION 3.5)
+
+                    project(template)
+
+                    set(CMAKE_CXX_STANDARD 11)
+
+                    FIND_PACKAGE(Threads REQUIRED)
+                    FIND_PACKAGE(Eigen3 REQUIRED)
+                    INCLUDE_DIRECTORIES(${EIGEN3_INCLUDE_DIR})
+                    ADD_COMPILE_OPTIONS(-Werror=return-type
+                                        -Wall -Wextra -Wmissing-declarations
+                                        -Wredundant-decls -Woverloaded-virtual)
+
+                    add_executable(${PROJECT_NAME}
+                                   ${PROJECT_NAME}.cpp)
+
+                    target_link_libraries(${PROJECT_NAME}
+                                          dqrobotics
+                                          dqrobotics-interface-vrep
+                                          Threads::Threads)
 
 
 .. hint::
