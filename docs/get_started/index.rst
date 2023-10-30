@@ -77,8 +77,6 @@ Contents
 
 .. rubric:: Recommended References
 
-* **About** |dq|_
-
 
 .. raw:: html
 
