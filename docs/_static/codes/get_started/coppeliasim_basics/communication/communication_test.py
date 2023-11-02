@@ -2,7 +2,7 @@
 from dqrobotics.interfaces.vrep import DQ_VrepInterface
 import time
 
-vi = DQ_VrepInterface()
+
 
 
 def main() -> None:
