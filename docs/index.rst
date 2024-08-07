@@ -1,3 +1,5 @@
+:html_theme.sidebar_secondary.remove:
+
 =============================================================================
 Tutorial: DQ Robotics with `CoppeliaSim <https://www.coppeliarobotics.com/>`_
 =============================================================================
