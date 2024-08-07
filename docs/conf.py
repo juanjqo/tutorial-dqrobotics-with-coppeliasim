@@ -137,6 +137,11 @@ html_sidebars = {
     "index": [],
 }
 
+rst_prolog = """.. raw:: html
+    :file: _static/mathjax_config.html
+"""
+
+
 #  Override mathjax_path to correct tex render.
 mathjax_path = 'https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 
@@ -153,6 +158,7 @@ mathjax_config = {
             }
         }
     }
+
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

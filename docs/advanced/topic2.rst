@@ -2,6 +2,11 @@
 Topic B2
 ========
 
+.. raw:: html
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 Consider these important definitions that apply to all following explanations.
 
 The quaternion set is given by
@@ -18,3 +23,12 @@ The dual quaternion set is given by
 
 where :math:`\dual^2=0` but :math:`\dual\neq0`.
 
+
+.. math::
+
+    \begin{aligned}
+    V_{source} &= i\times R_{source} \\
+    V_{output} &= -i\times R_{feedback} \\
+    \frac{V_{source}}{V_{output}} &= -\frac{R_{source}}{R_{feedback}}\\
+    V_{output} &= -V_{source}\frac{R_{feedback}}{R_{source}}
+    \end{aligned}
