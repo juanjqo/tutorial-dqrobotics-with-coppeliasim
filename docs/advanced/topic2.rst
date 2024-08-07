@@ -2,8 +2,6 @@
 Topic B2
 ========
 
-.. raw:: html
-    :file: _static/mathjax_config.html
 
 Consider these important definitions that apply to all following explanations.
 
