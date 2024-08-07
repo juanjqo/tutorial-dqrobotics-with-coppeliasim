@@ -124,7 +124,7 @@ html_theme_options = {
     # "article_footer_items": ["test.html", "test.html"],
     # "content_footer_items": ["test.html", "test.html"],
     # "footer_start": ["test.html", "test.html"],
-    # "secondary_sidebar_items": ["page-toc.html"],  # Remove the source buttons
+    "secondary_sidebar_items": ["page-toc", "edit-this-page", "sourcelink"],,  # Remove the source buttons
 
     #"primary_sidebar_end": ["sidebar-ethical-ads"],
     # "search_bar_position": "navbar",  # TODO: Deprecated - remove in future version
