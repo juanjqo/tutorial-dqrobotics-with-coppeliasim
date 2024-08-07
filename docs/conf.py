@@ -138,7 +138,7 @@ html_sidebars = {
 }
 
 rst_prolog = """.. raw:: html
-    :file: _static/mathjax_config.html
+    :file: ./_static/mathjax_config.html
 """
 
 
