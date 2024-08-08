@@ -1,6 +1,3 @@
-.. raw:: html
-    :file: mathjax_config.html
-
 ========
 Topic B2
 ========

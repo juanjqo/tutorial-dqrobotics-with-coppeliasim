@@ -45,7 +45,7 @@ intersphinx_disabled_domains = ['std']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-html_static_path = ['_static']
+html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 html_context = {
    # ...
@@ -115,7 +115,7 @@ html_theme_options = {
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     #"navbar_center": ["version-switcher", "navbar-nav"],
     #"announcement": "https://raw.githubusercontent.com/pydata/pydata-sphinx-theme/main/docs/_templates/custom-template.html",
-    "announcement": "This project is unofficial and under active development!</a>",
+    "announcement": "https://raw.githubusercontent.com/juanjqo/tutorial-dqrobotics-with-coppeliasim/main/docs/_static/mathjax_config.html",
     "show_nav_level": 2,
     # "navbar_start": ["navbar-logo"],
     # "navbar_end": ["theme-switcher", "navbar-icon-links"],
