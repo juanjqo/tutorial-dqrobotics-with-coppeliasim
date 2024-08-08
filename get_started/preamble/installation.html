@@ -1,0 +1,819 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installation &#8212; tutorial-dqrobotics-with-coppeliasim 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-shadow.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-punk.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-noir.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-light.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tooltipster-sideTip-borderless.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/micromodal.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=cef8158c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../../_static/documentation_options.js?v=e1a75a79"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/hoverxref.js"></script>
+    <script src="../../_static/js/tooltipster.bundle.min.js"></script>
+    <script src="../../_static/js/micromodal.min.js"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'get_started/preamble/installation';</script>
+    <link rel="icon" href="../../_static/logo.svg"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="One scene to rule them all" href="example_scene.html" />
+    <link rel="prev" title="Preamble" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="MyProject"/>
+    <script>document.write(`<img src="../../_static/logo.svg" class="logo__image only-dark" alt="MyProject"/>`);</script>
+  
+  
+    <p class="title logo__title">Home</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Get started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../advanced/index.html">
+    Advanced topics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://github.com/dqrobotics/learning-dqrobotics-in-matlab">
+    Learn DQ Robotics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ros2-tutorial.readthedocs.io/en/latest/">
+    Learn ROS2
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://hal.science/hal-01478225v1">
+    Learn Dual Quaternion Algebra
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/juanjqo/tutorial-dqrobotics-with-coppeliasim" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://dqrobotics.github.io/" title="DQ Robotics" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://raw.githubusercontent.com/juanjqo/tutorial-dqrobotics-with-coppeliasim/main/docs/_static/basics/dqrobotics_logo_infinity2.svg" class="icon-link-image" alt="DQ Robotics"/></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    Get started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../advanced/index.html">
+    Advanced topics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://github.com/dqrobotics/learning-dqrobotics-in-matlab">
+    Learn DQ Robotics
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ros2-tutorial.readthedocs.io/en/latest/">
+    Learn ROS2
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://hal.science/hal-01478225v1">
+    Learn Dual Quaternion Algebra
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/juanjqo/tutorial-dqrobotics-with-coppeliasim" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+            
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://dqrobotics.github.io/" title="DQ Robotics" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://raw.githubusercontent.com/juanjqo/tutorial-dqrobotics-with-coppeliasim/main/docs/_static/basics/dqrobotics_logo_infinity2.svg" class="icon-link-image" alt="DQ Robotics"/></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html"><strong>Preamble</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example_scene.html">One scene to rule them all</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../coppeliasim_basics/index.html"><strong>Fundamentals on CoppeliaSim</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../coppeliasim_basics/interface.html">Knowing the user interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coppeliasim_basics/engines.html">Engines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coppeliasim_basics/simulation_parameters.html">Simulation parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coppeliasim_basics/ports.html">Enabling ports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coppeliasim_basics/minimal_example.html">Minimal example: asynchronous mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coppeliasim_basics/synchronous.html">Minimal example: synchronous mode</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../kinematic_world/index.html"><strong>Kinematic world</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../kinematic_world/objects.html">Interacting with objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kinematic_world/robots.html">Interacting with robots</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../dynamic_world/index.html"><strong>Dynamic world</strong></a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+        <div class="sidebar-primary-item">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Get started</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link"><strong>Preamble</strong></a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Installation</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">#</a></h1>
+<section id="coppeliasim">
+<h2>CoppeliaSim<a class="headerlink" href="#coppeliasim" title="Link to this heading">#</a></h2>
+<p>Download and install CoppeliaSim EDU from this <a class="reference external" href="https://www.coppeliarobotics.com/"><strong>link</strong></a>.</p>
+<p>On Ubuntu, you only need to extract the downloaded file. For instance, if you use Ubuntu 22.04,
+the file would seem to something like <code class="file docutils literal notranslate"><span class="pre">CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04.tar.xz</span></code>. To extract it, you
+can use the graphic interface or the terminal. The latter can be done as follows:</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Learn more about the terminal in Ubuntu</p>
+<p><a class="reference external" href="https://ros2-tutorial.readthedocs.io/en/latest/preamble/ubuntu.html">https://ros2-tutorial.readthedocs.io/en/latest/preamble/ubuntu.html</a></p>
+</div>
+<p>Open a new terminal (<kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">CTRL</kbd>+<kbd class="kbd docutils literal notranslate">ALT</kbd>+<kbd class="kbd docutils literal notranslate">T</kbd></kbd>) and type</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~/</span><span class="n">Downloads</span><span class="o">/</span>
+<span class="n">tar</span> <span class="o">-</span><span class="n">xf</span> <span class="n">CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu22_04</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">xz</span>
+</pre></div>
+</div>
+<p>You can open CoppeliaSim by typing:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">~/</span><span class="n">Downloads</span><span class="o">/</span><span class="n">CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu20_04</span><span class="o">/</span><span class="n">coppeliaSim</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You can create an alias to CoppeliaSim. For instance:</p>
+<p>Run this (<strong>Do this only once</strong>):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s2">&quot;alias coppeliasim=&#39;~/Downloads/CoppeliaSim_Edu_V4_5_1_rev4_Ubuntu20_04/coppeliaSim.sh &amp;&#39;&quot;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">bashrc</span>
+<span class="n">source</span> <span class="o">~/.</span><span class="n">bashrc</span>
+</pre></div>
+</div>
+<p>Now, you can type <code class="file docutils literal notranslate"><span class="pre">coppeliasim</span></code> in your terminal to open CoppeliaSim!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The DQ Robotics library uses the legacy remote API, which is available for Windows 64bits,
+Ubuntu 64bits <code class="file docutils literal notranslate"><span class="pre">{</span></code> 16.04, 18.04, 20.04, 22.04 <code class="file docutils literal notranslate"><span class="pre">}</span></code> and MacOS 12 64bits (intel processors).</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Apple Silicon macs have the option to download CoppeliaSim <code class="file docutils literal notranslate"><span class="pre">x86_64</span></code> and <code class="file docutils literal notranslate"><span class="pre">arm64</span></code>.
+However, the latter does not work with the legacy remote API.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>MacOS users could require additional steps to run a simulation.</p>
+<ol class="arabic simple">
+<li><p>Add <code class="file docutils literal notranslate"><span class="pre">simRemoteApi.start(19997)</span></code> to the main script of the scene.</p></li>
+<li><p>Start the simulation.</p></li>
+<li><p>Run your script.</p></li>
+</ol>
+<p>Check the <a class="reference external" href="https://dqroboticsgithubio.readthedocs.io/en/latest/installation/python.html"><strong>DQ Robotics documentation</strong></a> for more details.</p>
+</div>
+<video width="100%" height="auto" autoplay muted loop playsInline> <source
+ src="../../_static/videos/coppeliaSim.mp4"
+ type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+ Your browser does not support the video tag.  </video></section>
+<section id="dq-robotics">
+<h2>DQ Robotics<a class="headerlink" href="#dq-robotics" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Matlab</label><div class="sd-tab-content docutils">
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>DQ Robotics for Matlab is distributed as a LGPLV3 licensed package. Matlab, however, is not free software and other third-party toolboxes may also not be free.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl class="simple">
+<dt>The installation for Matlab has four steps:</dt><dd><ol class="arabic simple">
+<li><p>Download the DQ Robotics.</p></li>
+<li><p>Add the DQ Robotics to the path in Matlab.</p></li>
+<li><p>Add the <code class="file docutils literal notranslate"><span class="pre">matlab</span> <span class="pre">folder</span></code> located in your CoppeliaSim to the path in Matlab.</p></li>
+<li><p>Add the <code class="file docutils literal notranslate"><span class="pre">remoteApi</span></code> located in CoppeliaSim to the path in Matlab. The <code class="file docutils literal notranslate"><span class="pre">remoteApi</span></code></p></li>
+</ol>
+</dd>
+</dl>
+</div>
+<p>Clone the repository (you can use <a class="reference external" href="https://desktop.github.com/">Github Desktop</a> or <a class="reference external" href="https://git-scm.com/">git commands</a> ). Alternatively,
+you can download the zip file.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+git</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">~</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">dqrobotics</span><span class="o">/</span><span class="n">matlab</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+<p>Set the path in Matlab. Example:</p>
+<video width="100%" height="auto" autoplay muted loop playsInline> <source
+ src="../../_static/videos/add_path_windows.mp4"
+ type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+ Your browser does not support the video tag.  </video></div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+zip file</label><div class="sd-tab-content docutils">
+<p>Download the zip file (Only if you did not clone the repository)</p>
+<p>Go to the <a class="reference external" href="https://github.com/dqrobotics/matlab.git"><strong>repository</strong></a> clik on <span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">&lt;&gt; Code</span>, and clik on <span class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary">Download ZIP</span>.</p>
+<img alt="../../_images/install_matlab_zip.png" class="align-center" src="../../_images/install_matlab_zip.png" />
+<p>Unzip the <span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">matlab-master.zip</span> file and add it to the Path in Matlab.</p>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Add to the path both the <code class="file docutils literal notranslate"><span class="pre">matlab</span> <span class="pre">folder</span></code> and the <code class="file docutils literal notranslate"><span class="pre">remoteApi</span></code>. Usually, they are located in</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-5" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Ubuntu x64</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">YOUR_COPPELIASIM_PATH</span><span class="o">/</span><span class="n">programming</span><span class="o">/</span><span class="n">legacyRemoteApi</span><span class="o">/</span><span class="n">remoteApiBindings</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">YOUR_UBUNTU_VERSION</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">YOUR_COPPELIASIM_PATH</span><span class="o">/</span><span class="n">programming</span><span class="o">/</span><span class="n">legacyRemoteApi</span><span class="o">/</span><span class="n">remoteApiBindings</span><span class="o">/</span><span class="n">matlab</span><span class="o">/</span><span class="n">matlab</span>
+</pre></div>
+</div>
+<video width="100%" height="auto" autoplay muted loop playsInline> <source
+ src="../../_static/videos/add_path_remote_api_ubuntu.mp4"
+ type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+ Your browser does not support the video tag.  </video></div>
+<input id="sd-tab-item-6" name="sd-tab-set-2" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+Windows x64</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span><span class="o">/</span><span class="n">Program</span> <span class="n">Files</span><span class="o">/</span><span class="n">CoppeliaRobotics</span><span class="o">/</span><span class="n">CoppeliaSimEdu</span><span class="o">/</span><span class="n">programming</span><span class="o">/</span><span class="n">legacyRemoteApi</span><span class="o">/</span><span class="n">remoteApiBindings</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">Windows</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span><span class="o">/</span><span class="n">Program</span> <span class="n">Files</span><span class="o">/</span><span class="n">CoppeliaRobotics</span><span class="o">/</span><span class="n">CoppeliaSimEdu</span><span class="o">/</span><span class="n">programming</span><span class="o">/</span><span class="n">legacyRemoteApi</span><span class="o">/</span><span class="n">remoteApiBindings</span><span class="o">/</span><span class="n">matlab</span><span class="o">/</span><span class="n">matlab</span>
+</pre></div>
+</div>
+<video width="100%" height="auto" autoplay muted loop playsInline> <source
+ src="../../_static/videos/add_path_remote_api.mp4"
+ type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+ Your browser does not support the video tag.  </video></div>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Python</label><div class="sd-tab-content docutils">
+<p><img alt="ubuntu" src="https://img.shields.io/badge/official%20support-Ubuntu%20LTS-orange" /> <img alt="windows" src="https://img.shields.io/badge/partial%20support-Windows%20&amp;%20macOS-blue" /> <img alt="python" src="https://img.shields.io/pypi/pyversions/dqrobotics/21.4.0a75" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are unfamiliar with Python, check this <a class="reference external" href="https://ros2-tutorial.readthedocs.io/en/latest/preamble/python.html"><strong>tutorial</strong></a>
+before installing the library.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>You could break your system or create annoying conflicts by using <code class="file docutils literal notranslate"><span class="pre">sudo</span></code> to install Python packages.
+Check <a class="reference external" href="https://ros2-tutorial.readthedocs.io/en/latest/preamble/ubuntu.html"><strong>Ubuntu Terminal Basics</strong></a> to learn more.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It is a good practice to isolate your Python <a class="reference external" href="https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv"><strong>environment</strong></a> (i.e., using <code class="file docutils literal notranslate"><span class="pre">venv</span></code> to create virtual environments).</p>
+</div>
+<p>Open a terminal and run (using a virtual environment hopefully):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="o">--</span><span class="n">pre</span> <span class="n">dqrobotics</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>PyCharm</strong> is an excellent multiplatform software to manage your Python scripts and your Python <a class="reference external" href="https://ros2-tutorial.readthedocs.io/en/latest/preamble/python/installing_python.html#isolate-your-environment-with-a-venv"><strong>environment</strong></a>.
+The Community Edition is free and open source.</p>
+</div>
+<p>Check this video using Pycharm to install DQ Robotics in a virtual environment:</p>
+<video width="100%" height="auto" autoplay muted loop playsInline> <source
+ src="../../_static/videos/pycharm.mp4"
+ type="video/mp4" style="margin-left: -220px; margin-right: -10.5%">
+ Your browser does not support the video tag.  </video></div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+C++</label><div class="sd-tab-content docutils">
+<p><img alt="ubuntu" src="https://img.shields.io/badge/official%20support-Ubuntu%20LTS-orange" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The C++ version is recommended only for experienced users.</p>
+</div>
+<p>Open a terminal and run:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">dqrobotics</span><span class="o">-</span><span class="n">dev</span><span class="o">/</span><span class="n">development</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">libdqrobotics</span> <span class="n">libdqrobotics</span><span class="o">-</span><span class="n">interface</span><span class="o">-</span><span class="n">vrep</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><strong>Preamble</strong></p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="example_scene.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">One scene to rule them all</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coppeliasim">CoppeliaSim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dq-robotics">DQ Robotics</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/get_started/preamble/installation.rst">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024 Juan Jose Quiroz Omana.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.4.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
