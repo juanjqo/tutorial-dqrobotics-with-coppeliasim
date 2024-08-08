@@ -2,7 +2,30 @@
 Topic B2
 ========
 
+.. raw:: html
 
+ <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      macros: {
+        RR: "{\\bf R}",
+        quat: ["{\\bf #1}", 1],
+        imi: ["{\\hat{\\imath}}"],
+        imj: ["{\\hat{\\jmath}}"],
+        imk: ["{\\hat{k}}"],
+        dual: ["{\\varepsilon}"],
+        mymatrix: ["\\bf{#1}",1],
+        dq: ["{\\underline{\\bf{#1}}}",1],
+      }
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  
+   
 Consider these important definitions that apply to all following explanations.
 
 The quaternion set is given by
