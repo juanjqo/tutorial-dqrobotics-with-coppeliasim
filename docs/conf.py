@@ -137,9 +137,9 @@ html_sidebars = {
     "index": [],
 }
 
-rst_prolog = """.. raw:: html
-    :file: _static/mathjax_config.html
-"""
+#rst_prolog = """.. raw:: html
+#    :file: _static/mathjax_config.html
+#"""
 
 
 # -- Options for EPUB output
